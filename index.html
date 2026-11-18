@@ -47,12 +47,32 @@ dialog::backdrop { background:rgba(0,0,0,.6); }
 dialog input { width:100%; margin:6px 0 12px; background:var(--panel2); border:1px solid var(--line); color:var(--text); border-radius:8px; padding:10px; font:inherit; }
 dialog ol { padding-left:18px; color:var(--muted); font-size:14px; }
 .toast { position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:var(--panel2); border:1px solid var(--line); padding:10px 16px; border-radius:10px; font-weight:700; z-index:20; display:none; }
+.brand { color:var(--text); text-decoration:none; cursor:pointer; }
+.views { display:flex; gap:4px; }
+.views button { background:none; border:0; color:var(--muted); font:inherit; font-weight:700; padding:7px 12px; border-radius:8px; cursor:pointer; }
+.views button.on { color:var(--text); background:var(--panel2); }
+.pay { background:rgba(255,212,0,.08); border:1px solid rgba(255,212,0,.35); border-radius:10px; padding:10px 12px; display:flex; flex-direction:column; gap:8px; }
+.pay .rate { font-weight:800; color:var(--accent); font-size:16px; }
+.pay .est { font-size:13px; color:var(--muted); display:flex; align-items:center; gap:6px; flex-wrap:wrap; }
+.pay .est input { width:110px; background:var(--panel2); border:1px solid var(--line); color:var(--text); border-radius:7px; padding:5px 8px; font:inherit; font-size:13px; }
+.pay .est b { color:var(--green); }
+.btn.apply { background:transparent; border-color:var(--accent); color:var(--accent); }
+.camp { background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:14px; display:flex; flex-direction:column; gap:8px; }
+.camp .top { display:flex; gap:10px; align-items:center; }
+.camp img { width:44px; height:44px; border-radius:10px; object-fit:cover; background:var(--panel2); }
+.camp .rate { background:var(--accent); color:var(--ink); font-weight:800; padding:3px 9px; border-radius:7px; font-size:13px; white-space:nowrap; }
+.camp .t { font-weight:800; }
+.camp .m { color:var(--muted); font-size:13px; }
+.bar2 { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; }
+.bar2 input, .bar2 select { background:var(--panel2); border:1px solid var(--line); color:var(--text); border-radius:8px; padding:9px 10px; font:inherit; }
+.bar2 input { flex:1; min-width:180px; }
 .who { font-size:12px; color:var(--muted); cursor:pointer; text-decoration:underline; }
 </style>
 </head>
 <body>
 <header><div class="hrow">
-  <div class="brand"><span class="logo">✂</span> Clip Drop</div>
+  <a class="brand" href="./" onclick="goHome(event)" title="Home"><span class="logo">✂</span> Clip Drop</a>
+  <div class="views"><button id="vClips" class="on" onclick="setView('clips')">Clips</button><button id="vEarn" onclick="setView('earn')">💰 Earn / Apply</button></div>
   <span class="who" id="who" onclick="setup()">Connect to tick ✓</span>
   <div class="seg" id="seg">
     <button data-f="todo" class="on">To post <span id="cTodo"></span></button>
@@ -63,6 +83,15 @@ dialog ol { padding-left:18px; color:var(--muted); font-size:14px; }
 <main>
   <div class="note" id="intro"><b>How it works:</b> tap <b>Download</b>, copy the <b>title</b> and <b>caption</b>, post the clip, then tap <b>Mark posted</b> (you can paste the post link). New clips appear here as soon as they're published.</div>
   <div id="grid" class="grid"></div>
+  <section id="earn" style="display:none">
+    <div class="note"><b>How to get paid for clips:</b> 1) Open a campaign below and <b>join / apply</b> (Content Rewards uses a free Whop account). 2) Post the clip on the platforms the campaign allows (TikTok, Reels, Shorts, X). 3) <b>Submit your post link</b> on the campaign page. You're paid per 1,000 views until the campaign budget runs out. Read each campaign's rules: some need specific hashtags or captions.</div>
+    <div class="bar2">
+      <input id="cq" placeholder="Search campaigns…" oninput="renderEarn()">
+      <select id="csort" onchange="renderEarn()"><option value="rate">Highest payout</option><option value="pool">Highest pool</option><option value="budget">Most budget left</option><option value="latest">Latest</option><option value="open">Least crowded</option></select>
+      <select id="capp" onchange="renderEarn()"><option value="">All</option><option value="open">No application needed</option></select>
+    </div>
+    <div id="camps" class="grid"></div>
+  </section>
 </main>
 
 <dialog id="dlg">
@@ -109,6 +138,7 @@ async function load() {
 }
 
 function render() {
+  if (VIEW !== "clips") return;
   const isPosted = (id) => !!(POSTED[id] && POSTED[id].posted);
   $("#cTodo").textContent = `(${CLIPS.filter(c => !isPosted(c.id)).length})`;
   $("#cPosted").textContent = `(${CLIPS.filter(c => isPosted(c.id)).length})`;
@@ -130,6 +160,12 @@ function render() {
           <div class="cap">${esc(c.caption)}</div></div>
         <div class="src">From <a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(c.source_title)}</a>${c.creator ? " · " + esc(c.creator) : ""}
           ${c.campaign_url ? ` · <a href="${esc(c.campaign_url)}" target="_blank" rel="noopener">campaign rules</a>` : ""}</div>
+        ${c.rate_label || c.campaign_url ? `<div class="pay">
+          <div>${c.rate_label ? `<span class="rate">💰 ${esc(c.rate_label)} / 1K views</span>` : `<span class="rate">💰 Paid campaign</span>`}
+            ${c.campaign ? `<div class="src">${esc(c.campaign)}${c.requires_application ? " · application required" : ""}</div>` : ""}</div>
+          ${c.rate ? `<div class="est">If it gets <input type="number" value="100000" step="10000" min="0" oninput="est(this, ${+c.rate})"> views ≈ <b>$${(100 * c.rate).toFixed(0)}</b></div>` : ""}
+          ${c.campaign_url ? `<a class="btn apply" href="${esc(c.campaign_url)}" target="_blank" rel="noopener">${c.requires_application ? "Apply to campaign →" : "Join & submit for payment →"}</a>` : ""}
+        </div>` : ""}
         ${p.posted && p.link ? `<div class="src">Posted: <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.link)}</a>${p.by ? " by " + esc(p.by) : ""}</div>` : ""}
         ${!p.posted ? `<input class="link-in" id="l-${esc(c.id)}" placeholder="Post link (optional)">` : ""}
         <div class="row">
@@ -138,6 +174,43 @@ function render() {
         </div>
       </div></div>`;
   }).join("");
+}
+
+let CAMPS = [], VIEW = "clips";
+function est(inp, rate) { inp.parentElement.querySelector("b").textContent = "$" + ((+inp.value || 0) / 1000 * rate).toFixed(0); }
+function goHome(e) {
+  e.preventDefault(); FILTER = "todo";
+  document.querySelectorAll("#seg button").forEach(x => x.classList.toggle("on", x.dataset.f === "todo"));
+  setView("clips"); window.scrollTo({ top: 0, behavior: "smooth" });
+}
+function setView(v) {
+  VIEW = v;
+  $("#vClips").classList.toggle("on", v === "clips"); $("#vEarn").classList.toggle("on", v === "earn");
+  $("#grid").style.display = v === "clips" ? "" : "none"; $("#intro").style.display = v === "clips" ? "" : "none";
+  $("#seg").style.visibility = v === "clips" ? "visible" : "hidden";
+  $("#earn").style.display = v === "earn" ? "" : "none";
+  if (v === "earn") loadCamps(); else render();
+}
+async function loadCamps() {
+  if (!CAMPS.length) $("#camps").innerHTML = `<div class="empty">Loading campaigns…</div>`;
+  const { data } = await getJSON("campaigns.json");
+  CAMPS = (data && data.campaigns) || [];
+  renderEarn();
+}
+function renderEarn() {
+  const q = $("#cq").value.toLowerCase(), sort = $("#csort").value, app = $("#capp").value;
+  let list = CAMPS.filter(c => (!q || (c.title + " " + c.brand + " " + c.category).toLowerCase().includes(q)) && (!app || !c.requires_application));
+  const key = { rate: c => -(c.rate || 0), pool: c => -(c.budget_total || c.budget_left || 0), latest: c => -(c.launched_ms || 0), budget: c => -(c.budget_left || 0), open: c => (c.clippers || 0) / Math.max(1, c.budget_left || 1) }[sort];
+  list.sort((a, b) => key(a) - key(b));
+  if (!list.length) { $("#camps").innerHTML = `<div class="empty">${CAMPS.length ? "No campaigns match." : "No campaign rates published yet. Ask the owner to sync rates from AI Clipper."}</div>`; return; }
+  const money = n => n >= 1000 ? "$" + (n / 1000).toFixed(1) + "K" : "$" + Math.round(n || 0);
+  $("#camps").innerHTML = list.map(c => `<div class="camp">
+    <div class="top">${c.thumbnail ? `<img src="${esc(c.thumbnail)}" alt="">` : ""}<div style="flex:1;min-width:0"><div class="t">${esc(c.title)}</div><div class="m">${esc(c.brand || "")}${c.category ? " · " + esc(c.category) : ""}</div></div>
+      <span class="rate">${esc(c.rate_label || (c.rate ? "$" + c.rate : "?"))}/1K</span></div>
+    <div class="m">${c.budget_left != null ? money(c.budget_left) + " left" + (c.budget_total ? " of " + money(c.budget_total) + " pool" : "") : ""}${c.clippers ? " · " + c.clippers + " clippers" : ""}${(c.platforms || []).length ? " · " + c.platforms.map(esc).join(", ") : ""}</div>
+    <div class="m">${c.requires_application ? "📝 Application required" : "✅ Open: join and start posting"} · ${esc(c.source || "")}</div>
+    ${c.url ? `<a class="btn apply" href="${esc(c.url)}" target="_blank" rel="noopener">${c.requires_application ? "Apply →" : "Join & get paid →"}</a>` : ""}
+  </div>`).join("");
 }
 
 function play(el, url) {
