@@ -1,133 +1,6 @@
 {
- "updated": 1795040068.176238,
+ "updated": 1795040487.319242,
  "campaigns": [
-  {
-   "id": "e0bbfc86-8965-46ce-a83b-cf6cb08fb903",
-   "title": "Long-form UGC",
-   "brand": "Content Rewards",
-   "category": "Entertainment",
-   "rate": 15.0,
-   "rate_label": "$15",
-   "budget_left": 4830.05,
-   "budget_total": 10000.0,
-   "clippers": 13,
-   "platforms": [
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/e0bbfc86-8965-46ce-a83b-cf6cb08fb903",
-   "thumbnail": "https://crusercontent.com/d3dd7e61-d3ed-5db5-bdee-a4c0d47f8a51/campaigns/thumbnails/e0bbfc86-8965-46ce-a83b-cf6cb08fb903.png",
-   "source": "Content Rewards",
-   "launched_ms": 1782154113000
-  },
-  {
-   "id": "8946f6e8-f822-4c76-b99d-234b2e414454",
-   "title": "Spacetime Chronicles DEMO on STEAM (Game Required)",
-   "brand": "BEVERLOR LTD",
-   "category": "Gaming",
-   "rate": 20.0,
-   "rate_label": "$20",
-   "budget_left": 897.29,
-   "budget_total": 1000.0,
-   "clippers": 12,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": true,
-   "url": "https://contentrewards.com/c/campaigns/8946f6e8-f822-4c76-b99d-234b2e414454",
-   "thumbnail": "https://crusercontent.com/4f466dcd-46c3-452f-80b9-41dd484af5b5/campaigns/thumbnails/ecd669dd-02fb-4dc1-a252-92fdc55d037c.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1790924201000
-  },
-  {
-   "id": "00e1b1c4-1cbc-4be2-9ffb-9baa3e1dd2fd",
-   "title": "Rendvo UGC Campaign — London",
-   "brand": "Rendvo",
-   "category": "Relationships & Dating",
-   "rate": 15.0,
-   "rate_label": "$15",
-   "budget_left": 851.5,
-   "budget_total": 1000.0,
-   "clippers": 6,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": true,
-   "url": "https://contentrewards.com/c/campaigns/00e1b1c4-1cbc-4be2-9ffb-9baa3e1dd2fd",
-   "thumbnail": "https://crusercontent.com/09f44455-eaf5-40f0-b605-14f9dc66e1be/campaigns/thumbnails/232bc5af-c202-4da6-a007-fe0fdcb81224.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1789071310000
-  },
-  {
-   "id": "6419549c-0626-4923-97a8-409f2cf2892d",
-   "title": "US/EU UGC | Virtual Account: Bank to Stablecoins",
-   "brand": "Bitget Wallet",
-   "category": "Banking & Fintech",
-   "rate": 8.0,
-   "rate_label": "$8",
-   "budget_left": 644.49,
-   "budget_total": 1100.0,
-   "clippers": 2,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": true,
-   "url": "https://contentrewards.com/c/campaigns/6419549c-0626-4923-97a8-409f2cf2892d",
-   "thumbnail": "https://crusercontent.com/fee7c815-8c01-51d1-8f2a-d2164d4bbe96/campaigns/thumbnails/7ef689ee-242b-4dfa-b2fa-041879755883.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1793166612000
-  },
-  {
-   "id": "804813b2-5bdb-4e3b-be68-689ca9911814",
-   "title": "UGC Recruitment [English]",
-   "brand": "Content Rewards",
-   "category": "Technology",
-   "rate": 5.0,
-   "rate_label": "$5",
-   "budget_left": 4952.58,
-   "budget_total": 5000.0,
-   "clippers": 3,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/804813b2-5bdb-4e3b-be68-689ca9911814",
-   "thumbnail": "https://crusercontent.com/d3dd7e61-d3ed-5db5-bdee-a4c0d47f8a51/campaigns/thumbnails/804813b2-5bdb-4e3b-be68-689ca9911814.png",
-   "source": "Content Rewards",
-   "launched_ms": 1792942769000
-  },
-  {
-   "id": "72dee9ef-6d23-46b4-b3d7-f5ff07e0a741",
-   "title": "Content Rewards x WayinVideo UGC",
-   "brand": "Content Rewards x WayinVideo",
-   "category": "Technology",
-   "rate": 4.0,
-   "rate_label": "$4",
-   "budget_left": 9944.82,
-   "budget_total": 10000.0,
-   "clippers": 5,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/72dee9ef-6d23-46b4-b3d7-f5ff07e0a741",
-   "thumbnail": "https://crusercontent.com/1e08e81b-dab9-41ba-aca4-852483ccf5f0/campaigns/thumbnails/49b60f2d-c191-4958-b901-3d904c06c27b.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1793989373000
-  },
   {
    "id": "802cf95a-ea84-4070-9a96-8a917831cb16",
    "title": "Jersey Fusion Clipping [Infinte Budget]",
@@ -147,6 +20,27 @@
    "thumbnail": "https://crusercontent.com/f30ae1b6-4d4e-500e-9742-07f43aa53c60/campaigns/thumbnails/20c5c2ef-3194-4e97-844d-b8a1e11c6c7c.webp",
    "source": "Content Rewards",
    "launched_ms": 1794250212000
+  },
+  {
+   "id": "ext-55b87463ad8d",
+   "title": "Kai Cenat Subathon Stream Clipping",
+   "brand": "Kai Cenat",
+   "category": "Streamer",
+   "rate": 2.0,
+   "rate_label": "$2",
+   "budget_left": 15500.0,
+   "budget_total": null,
+   "clippers": 0,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://discord.gg/FnCMF4KMAT",
+   "thumbnail": "",
+   "source": "Clip Tech",
+   "launched_ms": null
   },
   {
    "id": "7f4b31b0-ed1f-49b8-823a-97d7e18e0952",
@@ -170,34 +64,13 @@
    "launched_ms": 1794949730000
   },
   {
-   "id": "9eceaa2f-8830-478c-93f0-9fe25ef05529",
-   "title": "Vest Markets | $4 CPM | REPOSTING CAMPAIGN",
-   "brand": "Copy Clips Community",
-   "category": "Finance",
-   "rate": 4.0,
-   "rate_label": "$3–$4",
-   "budget_left": 1733.15,
-   "budget_total": 2500.0,
-   "clippers": 10,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/9eceaa2f-8830-478c-93f0-9fe25ef05529",
-   "thumbnail": "https://crusercontent.com/cef42c38-2c5b-5bba-b9b2-8102fbf4d1b9/campaigns/thumbnails/b3df7bbd-dc34-4dbd-8ae6-8be5ec69609a.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1792722372000
-  },
-  {
    "id": "b8cf722b-8dd2-444b-b3cc-b1a7d23104ba",
    "title": "Eneba Clipping and UGC",
    "brand": "Eneba",
    "category": "Gaming",
    "rate": 3.0,
    "rate_label": "$2.50–$3",
-   "budget_left": 10695.0,
+   "budget_left": 10693.57,
    "budget_total": 11947.07,
    "clippers": 41,
    "platforms": [
@@ -212,34 +85,13 @@
    "launched_ms": 1793219197000
   },
   {
-   "id": "8c8542f8-5c6c-4d80-bb9b-91519d597b3c",
-   "title": "Eneba Clipping and UGC",
-   "brand": "Eneba",
-   "category": "Gaming",
-   "rate": 3.0,
-   "rate_label": "$2.50–$3",
-   "budget_left": 10694.98,
-   "budget_total": 11947.07,
-   "clippers": 41,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/8c8542f8-5c6c-4d80-bb9b-91519d597b3c",
-   "thumbnail": "https://crusercontent.com/organizations/5e100488-37e8-5f88-9553-8e58dd52ceea/campaign-groups/covers/4da054f0-22ed-4016-b0ed-ccd40b1b3a47.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1793219199000
-  },
-  {
    "id": "0afd04db-e183-4411-9957-0b890ef272b5",
    "title": "Call of Duty MW4 عربي V2",
    "brand": "Arabic Clipping",
    "category": "Entertainment",
    "rate": 3.0,
    "rate_label": "$1–$3",
-   "budget_left": 13876.81,
+   "budget_left": 13875.86,
    "budget_total": 26300.0,
    "clippers": 82,
    "platforms": [
@@ -252,133 +104,6 @@
    "thumbnail": "https://crusercontent.com/3d29ab44-aeb3-5bf2-86c0-aaf4a1af87f7/campaigns/thumbnails/0beb74f6-5ac6-49e7-9bd0-264e14113232.webp",
    "source": "Content Rewards",
    "launched_ms": 1790060852000
-  },
-  {
-   "id": "b5d20b02-babf-4598-98cc-30e64ee015ce",
-   "title": "Maven UGC",
-   "brand": "Dumb Money Hunter (Maven)",
-   "category": "Finance",
-   "rate": 5.0,
-   "rate_label": "$5",
-   "budget_left": 1108.67,
-   "budget_total": 3000.0,
-   "clippers": 28,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": true,
-   "url": "https://contentrewards.com/c/campaigns/b5d20b02-babf-4598-98cc-30e64ee015ce",
-   "thumbnail": "https://crusercontent.com/1ca60d72-14d7-5118-b187-57d71d27917a/campaigns/thumbnails/b5d20b02-babf-4598-98cc-30e64ee015ce.png",
-   "source": "Content Rewards",
-   "launched_ms": 1785955748000
-  },
-  {
-   "id": "eb493c51-e548-44c4-a78a-3db1fb1c34bc",
-   "title": "Talk about clipping money, show SnapDub - $4/1K",
-   "brand": "SnapDub",
-   "category": "Artificial Intelligence",
-   "rate": 4.0,
-   "rate_label": "$4",
-   "budget_left": 931.66,
-   "budget_total": 1000.0,
-   "clippers": 6,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/eb493c51-e548-44c4-a78a-3db1fb1c34bc",
-   "thumbnail": "https://crusercontent.com/3d8599c9-ee4f-4145-9b62-d0303ecdfd68/campaigns/thumbnails/a0a0e67b-9e05-4f7f-9c55-bf51408bee70.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1792399680000
-  },
-  {
-   "id": "428f871a-47f6-482a-8573-4fa27527e133",
-   "title": "PermiFast · UGC face caméra · 3 $ / 1 000 vues",
-   "brand": "PermiFast",
-   "category": "Test Prep",
-   "rate": 3.0,
-   "rate_label": "$3",
-   "budget_left": 2223.55,
-   "budget_total": 2500.0,
-   "clippers": 4,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/428f871a-47f6-482a-8573-4fa27527e133",
-   "thumbnail": "https://crusercontent.com/d931257f-2414-4f5f-95e8-6089dbab214a/campaigns/thumbnails/95acef13-89a1-4e38-bddc-a19457c236b8.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1793693337000
-  },
-  {
-   "id": "18e2b161-311e-4ce9-b647-ba009dcc2d43",
-   "title": "Amino Club UGC Program",
-   "brand": "Amino Club",
-   "category": "Education",
-   "rate": 3.0,
-   "rate_label": "$3",
-   "budget_left": 1899.14,
-   "budget_total": 2000.0,
-   "clippers": 3,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": true,
-   "url": "https://contentrewards.com/c/campaigns/18e2b161-311e-4ce9-b647-ba009dcc2d43",
-   "thumbnail": "https://crusercontent.com/70394ca7-13f5-4ad7-9707-12cac8a16e11/campaigns/thumbnails/55ec2795-c4d5-4f57-afc2-a7c8460efb32.jpg",
-   "source": "Content Rewards",
-   "launched_ms": 1792882952000
-  },
-  {
-   "id": "61d2c454-a193-44b7-8ab8-9529db4d6f23",
-   "title": "Talking-Head UGC [English]",
-   "brand": "Content Rewards",
-   "category": "Product",
-   "rate": 3.0,
-   "rate_label": "$0.75–$3",
-   "budget_left": 3316.76,
-   "budget_total": 5000.0,
-   "clippers": 12,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/61d2c454-a193-44b7-8ab8-9529db4d6f23",
-   "thumbnail": "https://crusercontent.com/d3dd7e61-d3ed-5db5-bdee-a4c0d47f8a51/campaigns/thumbnails/85237537-154d-46ac-9040-fb4ce2815d05.png",
-   "source": "Content Rewards",
-   "launched_ms": 1792157075000
-  },
-  {
-   "id": "5e0bfe07-9c05-4055-8fd1-4916b7967b6c",
-   "title": "Trading UGC EN/RU — BinoDex $5/1K",
-   "brand": "BinoDex",
-   "category": "Trading",
-   "rate": 5.0,
-   "rate_label": "$5",
-   "budget_left": 890.1,
-   "budget_total": 1000.0,
-   "clippers": 33,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/5e0bfe07-9c05-4055-8fd1-4916b7967b6c",
-   "thumbnail": "https://crusercontent.com/12d4fc36-55aa-4a8d-b8e2-4e87847b1c49/campaigns/thumbnails/e80d67b9-bacb-481f-9818-d7a700c02063.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1790104739000
   },
   {
    "id": "f2c529a0-6777-4e8a-b50b-4c8bd4e4d90f",
@@ -409,7 +134,7 @@
    "category": "Entertainment",
    "rate": 3.0,
    "rate_label": "$2–$3",
-   "budget_left": 7741.610000000001,
+   "budget_left": 7741.540000000001,
    "budget_total": 23000.0,
    "clippers": 75,
    "platforms": [
@@ -424,54 +149,13 @@
    "launched_ms": 1786100717000
   },
   {
-   "id": "bc93e2a5-5fc0-4aef-8932-fe33cb847ab1",
-   "title": "Get Paid for GLP-1 TikTok Slideshows | JellyPal",
-   "brand": "JellyPal GLP1 Tracker",
-   "category": "Health & Wellness",
-   "rate": 3.0,
-   "rate_label": "$3",
-   "budget_left": 1888.53,
-   "budget_total": 2000.0,
-   "clippers": 5,
-   "platforms": [
-    "tiktok"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/bc93e2a5-5fc0-4aef-8932-fe33cb847ab1",
-   "thumbnail": "https://crusercontent.com/fa721916-29ef-44db-9e74-6eaef79b41ff/campaigns/thumbnails/ec50ff3c-598a-42de-b2ec-9c7531068ec1.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1790709920000
-  },
-  {
-   "id": "288471eb-3925-4360-b6ca-0e09454e22db",
-   "title": "Buildable Ai UGC",
-   "brand": "Buildable Ai",
-   "category": "Technology",
-   "rate": 5.5,
-   "rate_label": "$5.50",
-   "budget_left": 345.78999999999996,
-   "budget_total": 1000.0,
-   "clippers": 13,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/288471eb-3925-4360-b6ca-0e09454e22db",
-   "thumbnail": "https://crusercontent.com/d68f54ea-3270-401d-ad9d-868640a1f119/campaigns/thumbnails/70e700bb-7f22-4877-a470-8fae3c03d358.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1788503858000
-  },
-  {
    "id": "4a70ba91-44be-4dc8-946c-47e45a2403ea",
    "title": "Jo Koy: Comedy Special",
    "brand": "Eclipse",
    "category": "Entertainment",
    "rate": 2.0,
    "rate_label": "$2",
-   "budget_left": 15394.66,
+   "budget_left": 15392.64,
    "budget_total": 17500.0,
    "clippers": 13,
    "platforms": [
@@ -482,49 +166,6 @@
    "thumbnail": "https://crusercontent.com/32d93ad1-a5ce-56d5-83ee-285c48743148/campaigns/thumbnails/85f2a1e7-3ba1-464a-a270-cc8af914246e.webp",
    "source": "Content Rewards",
    "launched_ms": 1794091286000
-  },
-  {
-   "id": "27373fdf-e0f4-436e-a420-1102914639f4",
-   "title": "Stylit AI Outfit App | Up to $1,000 per Video",
-   "brand": "Gorka Studio",
-   "category": "Fashion",
-   "rate": 3.0,
-   "rate_label": "$3",
-   "budget_left": 3470.6400000000003,
-   "budget_total": 4949.89,
-   "clippers": 25,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/27373fdf-e0f4-436e-a420-1102914639f4",
-   "thumbnail": "https://crusercontent.com/5d4f2e80-5862-488c-b86a-d4f1dd355ef4/campaigns/thumbnails/93876617-b4c8-4679-8e8c-fd83ff305462.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1792509913000
-  },
-  {
-   "id": "7f0ad142-b1e2-45da-9714-8285d9f16020",
-   "title": "Build the app you wish existed",
-   "brand": "Matrix OS",
-   "category": "Apps",
-   "rate": 3.0,
-   "rate_label": "$3",
-   "budget_left": 981.76,
-   "budget_total": 1000.0,
-   "clippers": 2,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/7f0ad142-b1e2-45da-9714-8285d9f16020",
-   "thumbnail": "https://crusercontent.com/b8421cd3-cb9f-4787-ba38-7c152f0a110c/campaigns/thumbnails/e4cf506d-2dc0-4091-b37e-c99910e7a155.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1791527956000
   },
   {
    "id": "ac91f9d8-146d-4450-a78c-2c275eedd8f9",
@@ -575,7 +216,7 @@
    "category": "Gaming",
    "rate": 2.0,
    "rate_label": "$2",
-   "budget_left": 8144.02,
+   "budget_left": 8143.99,
    "budget_total": 8500.0,
    "clippers": 18,
    "platforms": [
@@ -591,34 +232,13 @@
    "launched_ms": 1794423634000
   },
   {
-   "id": "e71f41a8-2b00-408d-b228-fc2dad43e31e",
-   "title": "EV Sound FX: Clip or create — $3 per 1K views",
-   "brand": "EV Sound FX",
-   "category": "EVs",
-   "rate": 3.0,
-   "rate_label": "$3",
-   "budget_left": 967.54,
-   "budget_total": 1000.0,
-   "clippers": 7,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": true,
-   "url": "https://contentrewards.com/c/campaigns/e71f41a8-2b00-408d-b228-fc2dad43e31e",
-   "thumbnail": "https://crusercontent.com/f50467df-c8e0-443e-b3bd-6ea5386a26f2/campaigns/thumbnails/f4abf70c-9aa5-4292-864f-e6a03e565fb1.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1794008154000
-  },
-  {
    "id": "a1cefc3b-4533-438f-8e70-a7299550f1cf",
    "title": "Call of Duty - MW4 DMZ Intel Briefing Clipping",
    "brand": "Clipping Culture",
    "category": "Entertainment",
    "rate": 2.0,
    "rate_label": "$2.00",
-   "budget_left": 19348.35,
+   "budget_left": 19344.71,
    "budget_total": 30000.0,
    "clippers": 138,
    "platforms": [
@@ -638,7 +258,7 @@
    "category": "Entertainment",
    "rate": 2.0,
    "rate_label": "$2",
-   "budget_left": 7870.46,
+   "budget_left": 7870.08,
    "budget_total": 10000.0,
    "clippers": 29,
    "platforms": [
@@ -673,54 +293,13 @@
    "launched_ms": 1779794493000
   },
   {
-   "id": "d962ceae-572e-411a-9f6b-79731448fd13",
-   "title": "GPT-Video: How to VIBE EDIT(UGC)",
-   "brand": "GPT-video",
-   "category": "Software",
-   "rate": 2.5,
-   "rate_label": "$2.50",
-   "budget_left": 594.46,
-   "budget_total": 1000.0,
-   "clippers": 1,
-   "platforms": [
-    "instagram",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/d962ceae-572e-411a-9f6b-79731448fd13",
-   "thumbnail": "https://crusercontent.com/de98cf1c-fd52-497d-a5f9-c2d7aaa3d62b/campaigns/thumbnails/73249ec8-7035-4fb4-839e-1bed667e65c9.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1790800115000
-  },
-  {
-   "id": "b638713a-d2fd-4ee2-9161-61e355f0aa76",
-   "title": "VialLog Slideshow | $3 CPM",
-   "brand": "Copy Clips Community",
-   "category": "Health & Wellness",
-   "rate": 3.0,
-   "rate_label": "$3",
-   "budget_left": 552.78,
-   "budget_total": 1000.0,
-   "clippers": 4,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/b638713a-d2fd-4ee2-9161-61e355f0aa76",
-   "thumbnail": "https://crusercontent.com/cef42c38-2c5b-5bba-b9b2-8102fbf4d1b9/campaigns/thumbnails/c3e3c6d3-9f12-4cb4-92e4-794dbccd2604.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1789613953000
-  },
-  {
    "id": "65724060-69de-4dc7-a523-4843b7358871",
    "title": "SEGA - STRANGER THAN HEAVEN Act 2 Trailer Clipping",
    "brand": "Clipping Culture",
    "category": "Entertainment",
    "rate": 2.0,
    "rate_label": "$2.00",
-   "budget_left": 17420.89,
+   "budget_left": 17417.45,
    "budget_total": 24000.0,
    "clippers": 157,
    "platforms": [
@@ -741,7 +320,7 @@
    "category": "Gaming",
    "rate": 2.0,
    "rate_label": "$2.00",
-   "budget_left": 10916.869999999999,
+   "budget_left": 10916.85,
    "budget_total": 12000.0,
    "clippers": 96,
    "platforms": [
@@ -762,7 +341,7 @@
    "category": "Content Creator",
    "rate": 2.5,
    "rate_label": "$2.50",
-   "budget_left": 1459.08,
+   "budget_left": 1454.2199999999998,
    "budget_total": 5000.0,
    "clippers": 15,
    "platforms": [
@@ -776,33 +355,13 @@
    "launched_ms": 1794265798000
   },
   {
-   "id": "d64ae266-62a8-457e-b210-3ca465d59d3c",
-   "title": "Booty Shaking Capybara Clipping",
-   "brand": "Clip Influence",
-   "category": "Entertainment",
-   "rate": 2.0,
-   "rate_label": "$2",
-   "budget_left": 3251.1099999999997,
-   "budget_total": 5000.0,
-   "clippers": 14,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/d64ae266-62a8-457e-b210-3ca465d59d3c",
-   "thumbnail": "https://crusercontent.com/08085df9-ccc1-59b8-948d-736a5f658959/campaigns/thumbnails/4d8c872b-a7c6-4860-a0ac-6733e50fa585.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1793073594000
-  },
-  {
    "id": "86842687-ba2b-4638-a024-995dcf3d25a3",
    "title": "Michael Sartain's Clipping Army",
    "brand": "Michael Sartain's Clipper Army",
    "category": "Personal Brand",
    "rate": 2.0,
    "rate_label": "$1–$2",
-   "budget_left": 4932.3099999999995,
+   "budget_left": 4932.049999999999,
    "budget_total": 20000.0,
    "clippers": 34,
    "platforms": [
@@ -819,67 +378,26 @@
    "launched_ms": 1786022200000
   },
   {
-   "id": "54ebc760-2745-422c-a8b5-821069e73c34",
-   "title": "Jamieson (ARTIST) Promo",
-   "brand": "Jamieson",
-   "category": "Music",
-   "rate": 3.0,
-   "rate_label": "$3",
-   "budget_left": 872.1,
-   "budget_total": 1000.0,
-   "clippers": 23,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/54ebc760-2745-422c-a8b5-821069e73c34",
-   "thumbnail": "https://crusercontent.com/4be304c7-02c2-520d-a058-c78381f13623/campaigns/thumbnails/13511bf6-5e88-40a8-af9d-826c73871c4e.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1794288732000
-  },
-  {
-   "id": "3f96849d-79b8-4a89-a504-22bbd434b864",
-   "title": "Price Drop Club - Amazon Deals (UGC)",
-   "brand": "Price Drop Club",
-   "category": "Finance",
-   "rate": 1.5,
-   "rate_label": "$1.50",
-   "budget_left": 2500.0,
-   "budget_total": 2500.0,
+   "id": "ext-d9253b91040d",
+   "title": "Product launch clipping campaign",
+   "brand": "Not named",
+   "category": "Brand",
+   "rate": 1.47,
+   "rate_label": "$1.47",
+   "budget_left": 3240.0,
+   "budget_total": null,
    "clippers": 0,
    "platforms": [
-    "facebook",
-    "instagram",
     "tiktok",
-    "youtube"
+    "instagram",
+    "youtube",
+    "x"
    ],
    "requires_application": true,
-   "url": "https://contentrewards.com/c/campaigns/3f96849d-79b8-4a89-a504-22bbd434b864",
-   "thumbnail": "https://crusercontent.com/930492c8-f982-4bdf-8348-0b607adea8dc/campaigns/thumbnails/558eb377-5862-4731-9f30-25f475fbb4c2.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1794630255000
-  },
-  {
-   "id": "349269c9-977c-4544-aba1-71491eb22e50",
-   "title": "Repz | HYROX Slideshows & Silent UGC",
-   "brand": "Repz",
-   "category": "Sports",
-   "rate": 2.0,
-   "rate_label": "$2",
-   "budget_left": 988.17,
-   "budget_total": 1000.0,
-   "clippers": 2,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/349269c9-977c-4544-aba1-71491eb22e50",
-   "thumbnail": "https://crusercontent.com/71047535-368e-462b-8e56-6e54eb8508c7/campaigns/thumbnails/636241b1-4821-4806-bac9-c612ba92926d.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1793194599000
+   "url": "https://clipur.com/signup",
+   "thumbnail": "",
+   "source": "Clipur",
+   "launched_ms": null
   },
   {
    "id": "1cc66d1c-d7bb-4cd6-addb-68093cb50908",
@@ -888,7 +406,7 @@
    "category": "Finance",
    "rate": 3.0,
    "rate_label": "$1–$3",
-   "budget_left": 1246.03,
+   "budget_left": 1246.0,
    "budget_total": 2000.0,
    "clippers": 62,
    "platforms": [
@@ -909,7 +427,7 @@
    "category": "Entertainment",
    "rate": 1.0,
    "rate_label": "$1",
-   "budget_left": 144445.96,
+   "budget_left": 144444.87,
    "budget_total": 150000.0,
    "clippers": 114,
    "platforms": [
@@ -931,7 +449,7 @@
    "category": "Politics",
    "rate": 2.0,
    "rate_label": "$2",
-   "budget_left": 3715.2200000000003,
+   "budget_left": 3715.1099999999997,
    "budget_total": 5000.0,
    "clippers": 44,
    "platforms": [
@@ -952,7 +470,7 @@
    "category": "Entertainment",
    "rate": 2.0,
    "rate_label": "$2.00",
-   "budget_left": 8243.94,
+   "budget_left": 8243.9,
    "budget_total": 10500.0,
    "clippers": 200,
    "platforms": [
@@ -965,68 +483,6 @@
    "thumbnail": "https://crusercontent.com/a581a2a2-b79c-5f3c-b374-bab179ed49dc/campaigns/thumbnails/2a9d4a53-ae7c-4b70-ad8b-a58cb7b4a96a.webp",
    "source": "Content Rewards",
    "launched_ms": 1794337785000
-  },
-  {
-   "id": "1eb7b942-eeaf-4c83-b238-c9d6bd02829f",
-   "title": "Huss Valley [Fortnite Map]",
-   "brand": "BloxClips",
-   "category": "Fortnite",
-   "rate": 2.0,
-   "rate_label": "$2",
-   "budget_left": 2673.51,
-   "budget_total": 5000.0,
-   "clippers": 28,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/1eb7b942-eeaf-4c83-b238-c9d6bd02829f",
-   "thumbnail": "https://crusercontent.com/95898331-98cb-5af5-aac2-0320b4037a35/campaigns/thumbnails/78d393dd-dcd4-4eb7-bf95-8f8c69adb136.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1793401892000
-  },
-  {
-   "id": "a4b097bc-3358-47a6-8145-90eeb8183f2e",
-   "title": "Ali-A Fortnite Map 1v1 UGC Campaign",
-   "brand": "Ali-A",
-   "category": "Fortnite",
-   "rate": 2.0,
-   "rate_label": "$2",
-   "budget_left": 870.72,
-   "budget_total": 870.72,
-   "clippers": 3,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/a4b097bc-3358-47a6-8145-90eeb8183f2e",
-   "thumbnail": "https://crusercontent.com/eca77285-fcba-54ee-abac-6b9e2c7dbf3f/campaigns/thumbnails/b37061fa-5675-47fa-ad57-d0275191e06a.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1793525587000
-  },
-  {
-   "id": "6d11ea9e-b814-494a-a135-30dcbcc39645",
-   "title": "Mini Brands — Ulta Beauty Clipping",
-   "brand": "Clip Influence",
-   "category": "Entertainment",
-   "rate": 1.75,
-   "rate_label": "$1.50–$1.75",
-   "budget_left": 6193.99,
-   "budget_total": 10000.0,
-   "clippers": 60,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/6d11ea9e-b814-494a-a135-30dcbcc39645",
-   "thumbnail": "https://crusercontent.com/08085df9-ccc1-59b8-948d-736a5f658959/campaigns/thumbnails/5d164983-1fbd-4325-bc3b-97f8a105c799.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1792527174000
   },
   {
    "id": "bcd2f999-814a-4056-ae7e-c7c8012fab0b",
@@ -1051,87 +507,24 @@
    "launched_ms": 1795036888000
   },
   {
-   "id": "fa2bacc6-693d-4e47-9c76-3dd481763335",
-   "title": "BingePlay: Every Swipe Is a Playable Game",
-   "brand": "BingePlay",
-   "category": "Gaming",
-   "rate": 2.0,
-   "rate_label": "$2",
-   "budget_left": 762.1,
-   "budget_total": 1000.0,
-   "clippers": 3,
+   "id": "ext-d5a6cceaa4fb",
+   "title": "Sophie Reyer Book Promo [German + English]",
+   "brand": "Sophie Reyer",
+   "category": "Author",
+   "rate": 1.75,
+   "rate_label": "$1.75",
+   "budget_left": 598.0,
+   "budget_total": null,
+   "clippers": 0,
    "platforms": [
-    "instagram",
     "tiktok",
-    "youtube"
+    "instagram"
    ],
    "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/fa2bacc6-693d-4e47-9c76-3dd481763335",
-   "thumbnail": "https://crusercontent.com/a7b49ef7-1205-4266-ab80-1130b45c3811/campaigns/thumbnails/a205296b-2345-46c0-87ca-5e7014ba67ff.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1791962299000
-  },
-  {
-   "id": "6441e520-ad18-4f7f-83bf-01139f38c63a",
-   "title": "make.fun: make money with AI agents in contests",
-   "brand": "make.fun",
-   "category": "Technology",
-   "rate": 2.0,
-   "rate_label": "$2",
-   "budget_left": 1637.4,
-   "budget_total": 2000.0,
-   "clippers": 16,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/6441e520-ad18-4f7f-83bf-01139f38c63a",
-   "thumbnail": "https://crusercontent.com/ee357032-dbf5-407e-b132-eeda6e6b8901/campaigns/thumbnails/23213c96-0064-4e0d-9a99-561d7727dbaf.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1794119269000
-  },
-  {
-   "id": "784b385d-4d38-4fff-9f38-2aaeef81e47c",
-   "title": "Paint & Powder - Willa Outlaw",
-   "brand": "AIG",
-   "category": "Music",
-   "rate": 2.0,
-   "rate_label": "$2",
-   "budget_left": 985.23,
-   "budget_total": 1000.0,
-   "clippers": 7,
-   "platforms": [
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/784b385d-4d38-4fff-9f38-2aaeef81e47c",
-   "thumbnail": "https://crusercontent.com/f31ac401-41c8-4153-98fa-92d3f39e3c6e/campaigns/thumbnails/8dd3e7bb-b79c-4c66-828f-273ea6aff948.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1788627052000
-  },
-  {
-   "id": "a291ff43-760d-46a5-8e7b-53e4298df3fd",
-   "title": "Fundingpips UGC Campaign",
-   "brand": "FundingPips",
-   "category": "Technology",
-   "rate": 4.0,
-   "rate_label": "$3–$4",
-   "budget_left": 455.06999999999994,
-   "budget_total": 2000.0,
-   "clippers": 111,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/a291ff43-760d-46a5-8e7b-53e4298df3fd",
-   "thumbnail": "https://crusercontent.com/26cc66d8-2eea-5bc5-b85f-d4c7a1ccff9d/campaigns/thumbnails/d22eb92e-fafe-4c12-9fdf-d35613a1cdb9.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1785846056000
+   "url": "https://amplifymedia.live/campaigns/sophie-reyer",
+   "thumbnail": "",
+   "source": "Amplify Media",
+   "launched_ms": null
   },
   {
    "id": "b536fdfc-4d10-4069-92ff-103b65cecdbe",
@@ -1154,27 +547,6 @@
    "launched_ms": 1789997624000
   },
   {
-   "id": "f54cf10e-8308-4fb6-a62c-8e8cb8dc09b8",
-   "title": "FreeDrama US | Broken Soldier, Secret Duke | $2CPM",
-   "brand": "Freedrama",
-   "category": "Entertainment",
-   "rate": 1.5,
-   "rate_label": "$1.50",
-   "budget_left": 2516.29,
-   "budget_total": 3000.0,
-   "clippers": 9,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/f54cf10e-8308-4fb6-a62c-8e8cb8dc09b8",
-   "thumbnail": "https://crusercontent.com/70912736-d485-4648-8e2e-2e7a995f62ec/campaigns/thumbnails/efeb268b-520d-49d3-aceb-3ea37a31fe19.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1792492404000
-  },
-  {
    "id": "9f03e708-da0c-4ef6-992f-0c05cb56111f",
    "title": "The Weeknd - Hong Kong | MV Edits",
    "brand": "Artist Influence",
@@ -1193,68 +565,6 @@
    "thumbnail": "https://crusercontent.com/8caa4416-8b1b-5ec8-8fe0-6593859bb2d3/campaigns/thumbnails/56b21923-649a-4942-95d4-ea05d0982c2f.webp",
    "source": "Content Rewards",
    "launched_ms": 1793675037000
-  },
-  {
-   "id": "ca1165d7-29ad-44d0-911f-9125795f37bd",
-   "title": "CheatGPT - UGC Campaign",
-   "brand": "Clip Brand",
-   "category": "Technology",
-   "rate": 2.0,
-   "rate_label": "$2",
-   "budget_left": 949.22,
-   "budget_total": 1000.0,
-   "clippers": 11,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/ca1165d7-29ad-44d0-911f-9125795f37bd",
-   "thumbnail": "https://crusercontent.com/3d88379d-399d-5926-a7e0-6b47da45714d/campaigns/thumbnails/a475b005-de09-4d1f-a78e-9c3b24d49af8.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1791821782000
-  },
-  {
-   "id": "402a2657-e6d3-4f99-b75f-eed3700b140a",
-   "title": "Cursed Voyage 💀",
-   "brand": "BloxClips",
-   "category": "Roblox",
-   "rate": 1.0,
-   "rate_label": "$1",
-   "budget_left": 5000.0,
-   "budget_total": 5000.0,
-   "clippers": 0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": true,
-   "url": "https://contentrewards.com/c/campaigns/402a2657-e6d3-4f99-b75f-eed3700b140a",
-   "thumbnail": "https://crusercontent.com/95898331-98cb-5af5-aac2-0320b4037a35/campaigns/thumbnails/72f9f738-8e26-43d2-bd18-0b9f86d121e5.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1794940529000
-  },
-  {
-   "id": "c1edadeb-cd8d-4afa-9b80-004e1e4c442f",
-   "title": "Charlie Jeer - 'So Good' Edits",
-   "brand": "Kyro Clips",
-   "category": "Music",
-   "rate": 2.0,
-   "rate_label": "$2",
-   "budget_left": 876.4300000000001,
-   "budget_total": 1000.0,
-   "clippers": 14,
-   "platforms": [
-    "tiktok"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/c1edadeb-cd8d-4afa-9b80-004e1e4c442f",
-   "thumbnail": "https://crusercontent.com/15452493-ffb0-5cab-8e83-f1f22efa20a2/campaigns/thumbnails/c79e8a42-e63a-468c-88d8-bb9afa154e25.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1794709780000
   },
   {
    "id": "188c3e39-7850-4896-94df-e7a5be0cfec3",
@@ -1286,7 +596,7 @@
    "category": "Product",
    "rate": 1.0,
    "rate_label": "$1",
-   "budget_left": 9952.55,
+   "budget_left": 9951.57,
    "budget_total": 10000.0,
    "clippers": 10,
    "platforms": [
@@ -1302,76 +612,13 @@
    "launched_ms": 1794948980000
   },
   {
-   "id": "85317ee3-cfe7-4f9b-9ba5-d67701e50b93",
-   "title": "Wiped Clipping",
-   "brand": "Wiped",
-   "category": "Software",
-   "rate": 2.0,
-   "rate_label": "$2",
-   "budget_left": 411.5,
-   "budget_total": 1500.0,
-   "clippers": 4,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/85317ee3-cfe7-4f9b-9ba5-d67701e50b93",
-   "thumbnail": "https://crusercontent.com/2dec28ef-8b85-45b4-8408-948d23a2f9a7/campaigns/thumbnails/b4421c52-97e2-4f33-8551-42057ee057af.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1790615545000
-  },
-  {
-   "id": "2872b137-97d0-4a14-9f2b-1166989597ec",
-   "title": "Best Beauty Finds - Target & Walmart Clipping",
-   "brand": "Clip Influence",
-   "category": "Consumer Brand",
-   "rate": 1.5,
-   "rate_label": "$1.50",
-   "budget_left": 1849.0100000000002,
-   "budget_total": 5000.0,
-   "clippers": 11,
-   "platforms": [
-    "instagram",
-    "tiktok"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/2872b137-97d0-4a14-9f2b-1166989597ec",
-   "thumbnail": "https://crusercontent.com/08085df9-ccc1-59b8-948d-736a5f658959/campaigns/thumbnails/efb22cc0-4c01-4e37-b59a-337b0f44e46e.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1794459781000
-  },
-  {
-   "id": "05d0636f-677b-4fde-9527-334f510d3dc6",
-   "title": "superbot relay: the API key for your AI plans",
-   "brand": "superbot",
-   "category": "Technology",
-   "rate": 1.5,
-   "rate_label": "$1.50",
-   "budget_left": 899.21,
-   "budget_total": 1000.0,
-   "clippers": 3,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/05d0636f-677b-4fde-9527-334f510d3dc6",
-   "thumbnail": "https://crusercontent.com/d1d3e0d3-b49a-46b1-8c82-65f8a24155aa/campaigns/thumbnails/2ab55c73-39f2-419a-bc0d-9a779049f9d6.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1793744256000
-  },
-  {
    "id": "c18192ea-dbc2-4ba0-8138-cd3667ea18d5",
    "title": "Daimon X Syndicate [TESTING]",
    "brand": "Distributed",
    "category": "Apps",
    "rate": 2.0,
    "rate_label": "$2",
-   "budget_left": 1517.6000000000004,
+   "budget_left": 1515.04,
    "budget_total": 6433.0,
    "clippers": 60,
    "platforms": [
@@ -1405,73 +652,13 @@
    "launched_ms": 1794501184000
   },
   {
-   "id": "88bfdcd5-491d-4d0f-a403-e154fdd5685c",
-   "title": "superbot: unrestricted AI, fast and private",
-   "brand": "superbot",
-   "category": "Technology",
-   "rate": 1.5,
-   "rate_label": "$1.50",
-   "budget_left": 962.48,
-   "budget_total": 1000.0,
-   "clippers": 4,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "x",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/88bfdcd5-491d-4d0f-a403-e154fdd5685c",
-   "thumbnail": "https://crusercontent.com/d1d3e0d3-b49a-46b1-8c82-65f8a24155aa/campaigns/thumbnails/2ff0cf08-cbd1-4345-9509-b628fbe857e6.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1793743050000
-  },
-  {
-   "id": "1d55eb2a-a5ed-48c4-a6ac-28030d6c1a11",
-   "title": "[EASY $] FRENCH FRIENDSHIP TREND",
-   "brand": "Duetti",
-   "category": "Music",
-   "rate": 1.25,
-   "rate_label": "$1.25",
-   "budget_left": 1000.0,
-   "budget_total": 1000.0,
-   "clippers": 0,
-   "platforms": [
-    "tiktok"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/1d55eb2a-a5ed-48c4-a6ac-28030d6c1a11",
-   "thumbnail": "https://crusercontent.com/e9c758d9-3ddd-53dc-b5e0-9650a5015d7e/campaigns/thumbnails/eca0683d-afc5-4a7b-92e4-2124a002c978.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1794927056000
-  },
-  {
-   "id": "c59348b1-f63b-4d1b-b7d7-79833e8608eb",
-   "title": "[EASY $] POST LYRIC VIDEO OF VIRAL SONG",
-   "brand": "Duetti",
-   "category": "Music",
-   "rate": 1.25,
-   "rate_label": "$1.25",
-   "budget_left": 1000.0,
-   "budget_total": 1000.0,
-   "clippers": 0,
-   "platforms": [
-    "tiktok"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/c59348b1-f63b-4d1b-b7d7-79833e8608eb",
-   "thumbnail": "https://crusercontent.com/e9c758d9-3ddd-53dc-b5e0-9650a5015d7e/campaigns/thumbnails/2537dc11-3299-4683-a0bc-4f680f7eeed0.jpg",
-   "source": "Content Rewards",
-   "launched_ms": 1794946184000
-  },
-  {
    "id": "5f6b6ac5-9878-4ad6-b90f-c2f2a3392e91",
    "title": "Stream House LA Clipping| $4k Budget",
    "brand": "Motion Clipping",
    "category": "Entertainment",
    "rate": 2.0,
    "rate_label": "$0.50–$2",
-   "budget_left": 2381.49,
+   "budget_left": 2381.48,
    "budget_total": 4000.0,
    "clippers": 171,
    "platforms": [
@@ -1486,34 +673,13 @@
    "launched_ms": 1791245014000
   },
   {
-   "id": "907b65ff-908a-41e7-a123-86c61ddf0bd4",
-   "title": "Bandit [ROBLOX]",
-   "brand": "BloxClips",
-   "category": "Roblox",
-   "rate": 1.0,
-   "rate_label": "$1",
-   "budget_left": 2000.0,
-   "budget_total": 2000.0,
-   "clippers": 0,
-   "platforms": [
-    "instagram",
-    "tiktok",
-    "youtube"
-   ],
-   "requires_application": false,
-   "url": "https://contentrewards.com/c/campaigns/907b65ff-908a-41e7-a123-86c61ddf0bd4",
-   "thumbnail": "https://crusercontent.com/95898331-98cb-5af5-aac2-0320b4037a35/campaigns/thumbnails/c6b87a23-6169-4782-a841-96d13b164cf1.webp",
-   "source": "Content Rewards",
-   "launched_ms": 1795027360000
-  },
-  {
    "id": "6fe4c1aa-c8ca-4836-836b-01ab2540b337",
    "title": "It's Personal Podcast Clipping Campaign",
    "brand": "Tykoonclips",
    "category": "News & Politics",
    "rate": 2.0,
    "rate_label": "$2",
-   "budget_left": 1313.81,
+   "budget_left": 1313.8000000000002,
    "budget_total": 5000.0,
    "clippers": 81,
    "platforms": [
@@ -1534,7 +700,7 @@
    "category": "Apps",
    "rate": 1.0,
    "rate_label": "$1",
-   "budget_left": 3755.29,
+   "budget_left": 3755.2,
    "budget_total": 5000.0,
    "clippers": 5,
    "platforms": [
@@ -1577,7 +743,7 @@
    "category": "Beauty",
    "rate": 2.0,
    "rate_label": "$1.50–$2",
-   "budget_left": 966.0,
+   "budget_left": 965.9699999999998,
    "budget_total": 3100.0,
    "clippers": 50,
    "platforms": [
@@ -1669,6 +835,822 @@
    "thumbnail": "https://crusercontent.com/0cf0a8d3-6eb6-439a-89a4-2393004b5bae/campaigns/thumbnails/363c997e-1526-46aa-a10c-cc3e711a938f.webp",
    "source": "Content Rewards",
    "launched_ms": 1790108133000
+  },
+  {
+   "id": "c49840ae-ca22-4745-8a42-b675847e0355",
+   "title": "Santa Cruz Medicinals Clipping",
+   "brand": "VitaClips",
+   "category": "Health & Wellness",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 6894.749999999999,
+   "budget_total": 11864.63,
+   "clippers": 24,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/c49840ae-ca22-4745-8a42-b675847e0355",
+   "thumbnail": "https://crusercontent.com/513b8a7e-dc9a-5df0-9c02-ba741f54471d/campaigns/thumbnails/e0853e9d-a26d-4aa9-98d9-30634a07673e.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1794184060000
+  },
+  {
+   "id": "c9617009-53cb-4885-8ffc-b655f7c128b3",
+   "title": "TradeLens [SLIDESHOWS]",
+   "brand": "Reachify",
+   "category": "Trading",
+   "rate": 1.25,
+   "rate_label": "$1.25",
+   "budget_left": 3164.69,
+   "budget_total": 6000.0,
+   "clippers": 32,
+   "platforms": [
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/c9617009-53cb-4885-8ffc-b655f7c128b3",
+   "thumbnail": "https://crusercontent.com/0b310d3f-2a89-5d8c-9de2-165a1050e36d/campaigns/thumbnails/91f5c1f9-8e17-4126-8739-c85297cfa54b.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1788445217000
+  },
+  {
+   "id": "23022f84-5715-4ba5-a647-abc4baf4f0f8",
+   "title": "Open Road Clipping | $5.25K Budget | $1.25 CPM",
+   "brand": "Clipix",
+   "category": "Apps",
+   "rate": 1.25,
+   "rate_label": "$1.25",
+   "budget_left": 3494.56,
+   "budget_total": 5250.0,
+   "clippers": 44,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/23022f84-5715-4ba5-a647-abc4baf4f0f8",
+   "thumbnail": "https://crusercontent.com/3b7f5f59-c1b6-547b-92f0-792aaac3db4c/campaigns/thumbnails/31c3fba6-9dc7-444e-a017-befb3d442cd9.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1788975662000
+  },
+  {
+   "id": "df6de26f-86ec-4782-b818-1fc8053b99a4",
+   "title": "TOMO GTA VI Clipping",
+   "brand": "Clipping Nation",
+   "category": "Streamer",
+   "rate": 1.5,
+   "rate_label": "$1.50",
+   "budget_left": 870.72,
+   "budget_total": 1000.0,
+   "clippers": 11,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/df6de26f-86ec-4782-b818-1fc8053b99a4",
+   "thumbnail": "https://crusercontent.com/6175f8a2-de1d-48f2-a868-7aae119501b3/campaigns/thumbnails/6f8a54dd-d027-4188-8b73-6f94953ced37.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1794950381000
+  },
+  {
+   "id": "60e19a6d-066c-4090-8728-02eb6bd789ef",
+   "title": "Hoodrich Clipping | $1.00 CPM",
+   "brand": "Hype Media",
+   "category": "Streamer",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 4450.99,
+   "budget_total": 5000.0,
+   "clippers": 14,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/60e19a6d-066c-4090-8728-02eb6bd789ef",
+   "thumbnail": "https://crusercontent.com/64fe3cce-aaac-473a-b7d4-a5335e8b1c48/campaigns/thumbnails/6da62eff-e08e-422b-8b72-fcddf1d90a2d.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1790894296000
+  },
+  {
+   "id": "0fdc26e3-d379-4a7d-8be3-27b00d36c883",
+   "title": "LANY - 'Stuck'",
+   "brand": "The Clip Ship",
+   "category": "Music",
+   "rate": 1.5,
+   "rate_label": "$1.50",
+   "budget_left": 1254.1799999999998,
+   "budget_total": 4144.0,
+   "clippers": 25,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/0fdc26e3-d379-4a7d-8be3-27b00d36c883",
+   "thumbnail": "https://crusercontent.com/39e747b5-a3dd-54c5-a2b6-26239ffd61ee/campaigns/thumbnails/e8f5cd3d-d67b-491c-9350-9475d85d52fe.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1794366360000
+  },
+  {
+   "id": "051002dd-5c46-43d0-a446-43f2957ba3a9",
+   "title": "Dasgasd3m x RUCKUS | GTA 6",
+   "brand": "Ruckus",
+   "category": "Gaming",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 1000.0,
+   "budget_total": 1000.0,
+   "clippers": 0,
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/051002dd-5c46-43d0-a446-43f2957ba3a9",
+   "thumbnail": "https://crusercontent.com/e7ef5e1f-e1ac-47e0-b3a3-785b6e21d96c/campaigns/thumbnails/7fc7f9c5-8636-485e-84c0-2b51af765c21.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1794946153000
+  },
+  {
+   "id": "b25afad5-4bb6-4f26-a54b-af7e7c753782",
+   "title": "BIIANCO - softcore_hardstyle | DropBox + Reposts",
+   "brand": "Artist Influence",
+   "category": "Music",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 1000.0,
+   "budget_total": 1000.0,
+   "clippers": 0,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/b25afad5-4bb6-4f26-a54b-af7e7c753782",
+   "thumbnail": "https://crusercontent.com/8caa4416-8b1b-5ec8-8fe0-6593859bb2d3/campaigns/thumbnails/6739b0d3-3447-4cc0-83b6-676e3458ed93.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1794546726000
+  },
+  {
+   "id": "8072f4df-bfec-4975-9041-6a9ea78c1011",
+   "title": "PROF - 'Good Time Boy' Album Campaign - $2 CPM",
+   "brand": "Seventh & Bay",
+   "category": "Music",
+   "rate": 2.0,
+   "rate_label": "$2",
+   "budget_left": 833.21,
+   "budget_total": 1500.0,
+   "clippers": 89,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/8072f4df-bfec-4975-9041-6a9ea78c1011",
+   "thumbnail": "https://crusercontent.com/73976151-4b74-5366-b4d0-8c939daa835b/campaigns/thumbnails/2d45bece-e082-493b-8cf7-29fb5beb3c80.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1789154228000
+  },
+  {
+   "id": "07d35069-c63d-4382-bf14-0a70921f7693",
+   "title": "Millionaire Hot Takes | Viral Clipping",
+   "brand": "Crawford Legacy Group",
+   "category": "Content Creator",
+   "rate": 2.75,
+   "rate_label": "$2.75",
+   "budget_left": 231.54999999999995,
+   "budget_total": 2250.0,
+   "clippers": 47,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": true,
+   "url": "https://contentrewards.com/c/campaigns/07d35069-c63d-4382-bf14-0a70921f7693",
+   "thumbnail": "https://crusercontent.com/05d595e9-a3f7-4dea-b4fe-3dac775c4b3f/campaigns/thumbnails/295c6b56-e75f-492b-bb71-e4ff33c139e2.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1789859682000
+  },
+  {
+   "id": "2549ea0b-bead-4e60-aeab-78c351446dfc",
+   "title": "Ziggy [Viral Slideshows]",
+   "brand": "Bounty",
+   "category": "Language Learning",
+   "rate": 1.5,
+   "rate_label": "$1.50",
+   "budget_left": 1031.23,
+   "budget_total": 5000.0,
+   "clippers": 29,
+   "platforms": [
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/2549ea0b-bead-4e60-aeab-78c351446dfc",
+   "thumbnail": "https://crusercontent.com/5f7393bb-a65c-54f2-8cda-ec54f2cfa061/campaigns/thumbnails/c9facf1a-3aff-4187-90f9-f92cd3eb65b3.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1792511956000
+  },
+  {
+   "id": "705f6e21-38af-408c-9e55-c77e4611bf09",
+   "title": "Let Him Mansplain Podcast Clipping",
+   "brand": "ClipLaunch",
+   "category": "Podcasts",
+   "rate": 1.0,
+   "rate_label": "$0.50–$1",
+   "budget_left": 7018.79,
+   "budget_total": 10500.0,
+   "clippers": 71,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/705f6e21-38af-408c-9e55-c77e4611bf09",
+   "thumbnail": "https://crusercontent.com/43893b4f-434d-549b-9037-4f1c62984ff2/campaigns/thumbnails/d0224465-2be3-4577-a8b3-cbcef391da8d.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1793541733000
+  },
+  {
+   "id": "1db63081-715e-4e04-9b11-fbc1d4e8e700",
+   "title": "ForgeGUI [UNLIMITED]",
+   "brand": "BloxClips",
+   "category": "Technology",
+   "rate": 1.5,
+   "rate_label": "$1–$1.50",
+   "budget_left": 20462.559999999998,
+   "budget_total": 421587.0,
+   "clippers": 4309,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/1db63081-715e-4e04-9b11-fbc1d4e8e700",
+   "thumbnail": "https://crusercontent.com/organizations/95898331-98cb-5af5-aac2-0320b4037a35/campaign-groups/covers/e0bfd968-beac-4b06-8ddc-d9869bccfad5.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1778092124000
+  },
+  {
+   "id": "14d3e6c7-be7a-4650-b9fd-e35cb38a0ed2",
+   "title": "$5,000 Vookum Clipping Campaign",
+   "brand": "Vookum Clippers",
+   "category": "Business",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 2778.65,
+   "budget_total": 5000.0,
+   "clippers": 18,
+   "platforms": [
+    "facebook",
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/14d3e6c7-be7a-4650-b9fd-e35cb38a0ed2",
+   "thumbnail": "https://crusercontent.com/3bb30c31-760d-4a79-b618-31a360f2ef5f/campaigns/thumbnails/0aa0b04d-17dd-4f40-b7fd-b4bee088bdf2.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1794369638000
+  },
+  {
+   "id": "19859ab5-057c-4cff-847c-93155c896827",
+   "title": "The Chris Heyn Show Clipping",
+   "brand": "Chris Heyn Jr. Clipping",
+   "category": "Podcasts",
+   "rate": 1.5,
+   "rate_label": "$1.50",
+   "budget_left": 1687.31,
+   "budget_total": 2500.0,
+   "clippers": 101,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": true,
+   "url": "https://contentrewards.com/c/campaigns/19859ab5-057c-4cff-847c-93155c896827",
+   "thumbnail": "https://crusercontent.com/1508ea56-9060-4c76-acd4-73260792d718/campaigns/thumbnails/25681f56-1e19-4d1f-a8c4-1240346bde3f.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1791320972000
+  },
+  {
+   "id": "c86efdd3-c2cb-4a4f-b6a2-2c5a90b3c6fc",
+   "title": "Abby AI [SLIDESHOW]",
+   "brand": "ClipGenie",
+   "category": "Health & Wellness",
+   "rate": 1.5,
+   "rate_label": "$1.50",
+   "budget_left": 654.6799999999998,
+   "budget_total": 4580.0,
+   "clippers": 18,
+   "platforms": [
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/c86efdd3-c2cb-4a4f-b6a2-2c5a90b3c6fc",
+   "thumbnail": "https://crusercontent.com/dd0a9ca1-465d-5259-a68d-483e0a072f2b/campaigns/thumbnails/ac9dad09-ee7a-4e3e-a777-554d8269ad7e.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1790815374000
+  },
+  {
+   "id": "41e9d28d-467b-43ca-89ba-3cc7d53afbd2",
+   "title": "TopValue.fi",
+   "brand": "Marketing Cohort",
+   "category": "Finance",
+   "rate": 2.0,
+   "rate_label": "$2",
+   "budget_left": 319.26,
+   "budget_total": 1100.0,
+   "clippers": 24,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/41e9d28d-467b-43ca-89ba-3cc7d53afbd2",
+   "thumbnail": "https://crusercontent.com/f723e3ad-079c-4f1e-888c-4fd7409af68c/campaigns/thumbnails/c2b94f8f-1c6e-4f67-a9f9-c9d7bdaa6538.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1793579015000
+  },
+  {
+   "id": "c7a8e7c2-6989-4361-914f-f9571578a9b9",
+   "title": "F1 ASTON MARTIN x COINBASE",
+   "brand": "ClipHaus",
+   "category": "Sports",
+   "rate": 1.5,
+   "rate_label": "$1.50",
+   "budget_left": 2975.76,
+   "budget_total": 15000.0,
+   "clippers": 275,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/c7a8e7c2-6989-4361-914f-f9571578a9b9",
+   "thumbnail": "https://crusercontent.com/a5a5c8c5-60eb-5ecd-b1de-31ccc32e1b30/campaigns/thumbnails/316ce076-e503-4a94-ab16-fa50cb16da58.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1793737296000
+  },
+  {
+   "id": "2ade1fa0-ef91-40c6-af02-6ec52d2f5685",
+   "title": "Lucas Clipping Cycle 2",
+   "brand": "Lucas clipping",
+   "category": "Fan Page",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 2961.21,
+   "budget_total": 4900.0,
+   "clippers": 28,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/2ade1fa0-ef91-40c6-af02-6ec52d2f5685",
+   "thumbnail": "https://crusercontent.com/72c4435b-b67e-4072-a475-fefa6398851d/campaigns/thumbnails/8fb05e19-2ae7-43a8-ac4d-bbd7977f16e0.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1789502561000
+  },
+  {
+   "id": "e815a623-badd-4516-906c-b6cfce227ff9",
+   "title": "Clips Hablando - 1$ por cada 1000 visitas",
+   "brand": "Carlos Esparraga Clipping",
+   "category": "Personal Brand",
+   "rate": 1.0,
+   "rate_label": "$0.20–$1",
+   "budget_left": 3245.3100000000004,
+   "budget_total": 10000.0,
+   "clippers": 34,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": true,
+   "url": "https://contentrewards.com/c/campaigns/e815a623-badd-4516-906c-b6cfce227ff9",
+   "thumbnail": "https://crusercontent.com/33c5bffc-84ed-5334-89e3-9f9376ea5317/campaigns/thumbnails/e76b7e6a-219a-4508-9c16-a1b2397f38de.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1793809577000
+  },
+  {
+   "id": "816157c7-7b7f-4970-9f5c-ef83e469189c",
+   "title": "EDC DUSK TILL DAWN",
+   "brand": "Artist Influence",
+   "category": "Music",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 1458.97,
+   "budget_total": 2000.0,
+   "clippers": 9,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/816157c7-7b7f-4970-9f5c-ef83e469189c",
+   "thumbnail": "https://crusercontent.com/8caa4416-8b1b-5ec8-8fe0-6593859bb2d3/campaigns/thumbnails/708bf8cb-41a4-4530-80d7-635f7659e5fb.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1791879825000
+  },
+  {
+   "id": "40046522-56d9-45ad-9198-faea8eca90c6",
+   "title": "GTA 6 Clipping Campaign - Tokyo Girl",
+   "brand": "Placements",
+   "category": "Music",
+   "rate": 0.7,
+   "rate_label": "$0.70",
+   "budget_left": 1911.31,
+   "budget_total": 2000.0,
+   "clippers": 1,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/40046522-56d9-45ad-9198-faea8eca90c6",
+   "thumbnail": "https://crusercontent.com/7c8c47eb-3e41-5351-8236-6ea3f3951280/campaigns/thumbnails/3ad06b1d-cb73-4df4-bb7a-b6a3b837cbaa.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1794156514000
+  },
+  {
+   "id": "ext-1453d5dd817e",
+   "title": "Stake bounty campaign",
+   "brand": "Stake",
+   "category": "Gambling / streamer",
+   "rate": 3.0,
+   "rate_label": "$3",
+   "budget_left": null,
+   "budget_total": null,
+   "clippers": 0,
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://clipping.net/",
+   "thumbnail": "",
+   "source": "Clipping.net",
+   "launched_ms": null
+  },
+  {
+   "id": "ext-888ebe1c15f5",
+   "title": "MrBeast clipping campaigns on Vyro (unverified as live now)",
+   "brand": "MrBeast",
+   "category": "YouTuber",
+   "rate": 3.0,
+   "rate_label": "$3",
+   "budget_left": null,
+   "budget_total": null,
+   "clippers": 0,
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "instagram"
+   ],
+   "requires_application": true,
+   "url": "https://www.vyro.com",
+   "thumbnail": "",
+   "source": "Vyro",
+   "launched_ms": null
+  },
+  {
+   "id": "bb11120c-865b-4d12-911f-aec4e701767c",
+   "title": "G2G Channel Clipping Campaign",
+   "brand": "G2G Clippers",
+   "category": "Sports",
+   "rate": 1.5,
+   "rate_label": "$1.50",
+   "budget_left": 744.3,
+   "budget_total": 1000.0,
+   "clippers": 58,
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/bb11120c-865b-4d12-911f-aec4e701767c",
+   "thumbnail": "https://crusercontent.com/fec35710-a466-53ff-82ba-c9fc7baf88d8/campaigns/thumbnails/bb11120c-865b-4d12-911f-aec4e701767c.png",
+   "source": "Content Rewards",
+   "launched_ms": 1786029023000
+  },
+  {
+   "id": "1e8549b7-3b37-4d61-9bcb-22ae1c5005f6",
+   "title": "Elliott Caldwell's Campaign 2026",
+   "brand": "On Successful DNA Clipping",
+   "category": "Business",
+   "rate": 1.5,
+   "rate_label": "$1.50",
+   "budget_left": 838.3900000000001,
+   "budget_total": 2063.0,
+   "clippers": 76,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/1e8549b7-3b37-4d61-9bcb-22ae1c5005f6",
+   "thumbnail": "https://crusercontent.com/bb954d6f-a6fc-5439-9809-e8739fcde50f/campaigns/thumbnails/1e8549b7-3b37-4d61-9bcb-22ae1c5005f6.png",
+   "source": "Content Rewards",
+   "launched_ms": 1785941352000
+  },
+  {
+   "id": "f354afb5-bc73-4090-b723-35f65dbba276",
+   "title": "Topps x Clipfarm",
+   "brand": "Clip Farm",
+   "category": "Entertainment",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 11176.559999999998,
+   "budget_total": 66000.0,
+   "clippers": 677,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/f354afb5-bc73-4090-b723-35f65dbba276",
+   "thumbnail": "https://crusercontent.com/07f11898-4a1a-5b98-a340-ca5b8b7d83ba/campaigns/thumbnails/f354afb5-bc73-4090-b723-35f65dbba276.jpg",
+   "source": "Content Rewards",
+   "launched_ms": 1785857309000
+  },
+  {
+   "id": "8be02baf-03f5-4063-a406-ca18ea3da2db",
+   "title": "DeathByRomy - Body Horror",
+   "brand": "Verge Records",
+   "category": "Sound Campaign",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 1839.0,
+   "budget_total": 2500.0,
+   "clippers": 37,
+   "platforms": [
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/8be02baf-03f5-4063-a406-ca18ea3da2db",
+   "thumbnail": "https://crusercontent.com/403787cd-2c2d-4b8d-857c-0faef89d962c/campaigns/thumbnails/ee6dada3-9239-4717-aa02-31f95a38d4c8.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1792518235000
+  },
+  {
+   "id": "5944ed5a-9ee0-47d1-8545-2bbf614ac18b",
+   "title": "Mr. Pa Clipping",
+   "brand": "Clip Influence",
+   "category": "Entertainment",
+   "rate": 1.75,
+   "rate_label": "$1–$1.75",
+   "budget_left": 503.5,
+   "budget_total": 10000.0,
+   "clippers": 80,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/5944ed5a-9ee0-47d1-8545-2bbf614ac18b",
+   "thumbnail": "https://crusercontent.com/08085df9-ccc1-59b8-948d-736a5f658959/campaigns/thumbnails/f8987981-4b24-4411-955a-1d7c2fc3ba84.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1791486307000
+  },
+  {
+   "id": "a696e6af-18aa-4320-a61e-32e3bcf40a44",
+   "title": "$2 CPM new clipping niche: Payments",
+   "brand": "eFlow",
+   "category": "Banking & Fintech",
+   "rate": 2.0,
+   "rate_label": "$2",
+   "budget_left": 189.85000000000036,
+   "budget_total": 5000.0,
+   "clippers": 27,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/a696e6af-18aa-4320-a61e-32e3bcf40a44",
+   "thumbnail": "https://crusercontent.com/c611c64d-14aa-4bb9-943a-0f97342522d6/campaigns/thumbnails/444834ec-a9b9-4580-bf5a-4819648f8301.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1790070816000
+  },
+  {
+   "id": "816b45a1-dc3f-42b5-b41e-81a1ebf8360e",
+   "title": "WKWK مطعم وك الكويتي",
+   "brand": "ClipHaus",
+   "category": "Personal Brand",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 2113.0999999999985,
+   "budget_total": 12253.3,
+   "clippers": 58,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/816b45a1-dc3f-42b5-b41e-81a1ebf8360e",
+   "thumbnail": "https://crusercontent.com/a5a5c8c5-60eb-5ecd-b1de-31ccc32e1b30/campaigns/thumbnails/bee07b85-a7f1-46e3-9b4b-e6856096f70f.jpg",
+   "source": "Content Rewards",
+   "launched_ms": 1785097361000
+  },
+  {
+   "id": "6d896f33-152f-42a9-92f4-662199228349",
+   "title": "Lysium/Benji Ramos Clips",
+   "brand": "Lysium",
+   "category": "GTA",
+   "rate": 1.5,
+   "rate_label": "$1.50",
+   "budget_left": 523.22,
+   "budget_total": 1000.0,
+   "clippers": 51,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "x",
+    "youtube"
+   ],
+   "requires_application": true,
+   "url": "https://contentrewards.com/c/campaigns/6d896f33-152f-42a9-92f4-662199228349",
+   "thumbnail": "https://crusercontent.com/1636fe42-e16f-4569-8558-61ca1dd45c03/campaigns/thumbnails/3bf9c603-11c4-4418-996f-11d564bee13a.jpg",
+   "source": "Content Rewards",
+   "launched_ms": 1790564667000
+  },
+  {
+   "id": "e9962d08-d9d3-4ae4-a81e-1bb85819ead3",
+   "title": "WatchMeWin Clipping Portugal",
+   "brand": "WMW CLIPPING PT",
+   "category": "Entertainment",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 1128.3400000000001,
+   "budget_total": 2000.0,
+   "clippers": 21,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/e9962d08-d9d3-4ae4-a81e-1bb85819ead3",
+   "thumbnail": "https://crusercontent.com/4e5049f2-ee0d-4d4e-a7de-2c2991df27a0/campaigns/thumbnails/55e9d45e-7003-41e6-85ba-52681db8a117.jpg",
+   "source": "Content Rewards",
+   "launched_ms": 1792608093000
+  },
+  {
+   "id": "ext-3e74efe22ad2",
+   "title": "CODM LIVESTREAM (t-V4RLaE)",
+   "brand": "Call of Duty: Mobile",
+   "category": "Gaming",
+   "rate": 2.5,
+   "rate_label": "$2.50",
+   "budget_left": null,
+   "budget_total": null,
+   "clippers": 0,
+   "platforms": [],
+   "requires_application": false,
+   "url": "https://vyro.com/campaigns/codm-livestream-t-V4RLaE",
+   "thumbnail": "",
+   "source": "Vyro",
+   "launched_ms": null
+  },
+  {
+   "id": "ext-de3065dfd8da",
+   "title": "CODM LIVESTREAM (gIHv3L67)",
+   "brand": "Call of Duty: Mobile",
+   "category": "Gaming",
+   "rate": 2.5,
+   "rate_label": "$2.50",
+   "budget_left": null,
+   "budget_total": null,
+   "clippers": 0,
+   "platforms": [],
+   "requires_application": false,
+   "url": "https://vyro.com/campaigns/codm-livestream-gIHv3L67",
+   "thumbnail": "",
+   "source": "Vyro",
+   "launched_ms": null
+  },
+  {
+   "id": "5354eab8-c428-483f-9d34-09c8db7fc324",
+   "title": "HardcoreSMP Minecraft Clipping Campaign",
+   "brand": "FableSMP",
+   "category": "Minecraft",
+   "rate": 2.0,
+   "rate_label": "$2",
+   "budget_left": 152.68000000000006,
+   "budget_total": 1500.0,
+   "clippers": 29,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/5354eab8-c428-483f-9d34-09c8db7fc324",
+   "thumbnail": "https://crusercontent.com/42508d15-f3cb-447a-ad61-bf1cea10c430/campaigns/thumbnails/c44cce7b-2d5b-4f09-b181-b07dab9624fa.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1793318918000
+  },
+  {
+   "id": "45508e74-e67d-4922-b89d-53dafe4cf70d",
+   "title": "Austin Millz Clips",
+   "brand": "Austin Millz",
+   "category": "Streamer",
+   "rate": 1.0,
+   "rate_label": "$1",
+   "budget_left": 1090.84,
+   "budget_total": 1500.0,
+   "clippers": 31,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/45508e74-e67d-4922-b89d-53dafe4cf70d",
+   "thumbnail": "https://crusercontent.com/0f12e234-7e2f-47e4-b855-dd6fa407a20e/campaigns/thumbnails/e4fa8747-4d6b-41b7-bac2-5b6d62a67e28.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1794420211000
+  },
+  {
+   "id": "61dc172f-7ccb-4b9f-94b5-271d310d637b",
+   "title": "Mitchell Clips",
+   "brand": "Mitchell Clips",
+   "category": "Lifestyle",
+   "rate": 1.5,
+   "rate_label": "$1.50",
+   "budget_left": 209.15999999999997,
+   "budget_total": 1000.0,
+   "clippers": 15,
+   "platforms": [
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/61dc172f-7ccb-4b9f-94b5-271d310d637b",
+   "thumbnail": "https://crusercontent.com/70144028-d030-4697-9871-789142faacc2/campaigns/thumbnails/a2510b17-3d38-487a-98bb-8ffde663a245.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1793811908000
+  },
+  {
+   "id": "dcd13548-f5ec-4bcb-8555-a0e06b6319b8",
+   "title": "xikers - DIENAMITE MV and Showcase Clips [8428]",
+   "brand": "Sound Network",
+   "category": "Music",
+   "rate": 2.0,
+   "rate_label": "$2",
+   "budget_left": 174.39,
+   "budget_total": 1000.0,
+   "clippers": 47,
+   "platforms": [
+    "instagram",
+    "tiktok"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/dcd13548-f5ec-4bcb-8555-a0e06b6319b8",
+   "thumbnail": "https://crusercontent.com/3e78d7eb-0faf-5c3d-bc0a-6a883e449fbf/campaigns/thumbnails/0364d99d-e5db-48d9-93e9-d12ce206ba99.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1793733345000
+  },
+  {
+   "id": "2b51363d-04ce-4600-8c4f-d48ac58650f9",
+   "title": "He Stole My House | New vertTV Series",
+   "brand": "VertTV",
+   "category": "TV Series",
+   "rate": 1.25,
+   "rate_label": "$1.25",
+   "budget_left": 537.46,
+   "budget_total": 1000.0,
+   "clippers": 36,
+   "platforms": [
+    "facebook",
+    "instagram",
+    "tiktok",
+    "youtube"
+   ],
+   "requires_application": false,
+   "url": "https://contentrewards.com/c/campaigns/2b51363d-04ce-4600-8c4f-d48ac58650f9",
+   "thumbnail": "https://crusercontent.com/9faf39ea-e95a-4652-aa3b-ba6e5f4a4853/campaigns/thumbnails/317323fa-f219-4a31-8b41-e3ddd0efc71e.webp",
+   "source": "Content Rewards",
+   "launched_ms": 1794794892000
   }
  ]
 }
