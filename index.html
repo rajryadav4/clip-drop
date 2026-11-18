@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clip Drop</title>
+<meta name="robots" content="noindex">
+<style>
+:root { --bg:#0b0c10; --panel:#15171d; --panel2:#1d2028; --line:#2a2e3a; --text:#eceef3; --muted:#8e95a7; --accent:#ffd400; --ink:#141414; --green:#22c55e; --red:#ef4444; }
+* { box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
+body { margin:0; background:var(--bg); color:var(--text); font:15px/1.45 -apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif; }
+header { position:sticky; top:0; z-index:5; background:rgba(11,12,16,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); padding:12px 16px; }
+.hrow { max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:12px; flex-wrap:wrap; }
+.brand { font-weight:800; font-size:18px; display:flex; gap:8px; align-items:center; }
+.logo { background:var(--accent); color:var(--ink); width:28px; height:28px; border-radius:8px; display:grid; place-items:center; }
+.seg { display:flex; background:var(--panel2); border-radius:10px; padding:3px; margin-left:auto; }
+.seg button { background:none; border:0; color:var(--muted); font:inherit; font-weight:700; padding:7px 12px; border-radius:8px; cursor:pointer; }
+.seg button.on { background:var(--panel); color:var(--text); }
+main { max-width:1200px; margin:0 auto; padding:16px; }
+.note { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--accent); padding:12px 14px; border-radius:10px; margin-bottom:16px; color:var(--muted); font-size:14px; }
+.note b { color:var(--text); }
+.grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:16px; }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:14px; overflow:hidden; display:flex; flex-direction:column; }
+.card.posted { opacity:.6; }
+.media { position:relative; aspect-ratio:9/16; max-height:520px; background:#000 center/cover no-repeat; cursor:pointer; }
+.media video { width:100%; height:100%; object-fit:contain; background:#000; display:block; }
+.play { position:absolute; inset:0; display:grid; place-items:center; }
+.play span { width:64px; height:64px; border-radius:50%; background:rgba(0,0,0,.6); display:grid; place-items:center; font-size:26px; }
+.badges { position:absolute; top:10px; left:10px; right:10px; display:flex; gap:6px; flex-wrap:wrap; }
+.b { background:rgba(0,0,0,.72); color:#fff; font-size:12px; font-weight:700; padding:3px 8px; border-radius:6px; }
+.b.done { background:var(--green); color:#04210f; }
+.body { padding:14px; display:flex; flex-direction:column; gap:10px; }
+.lbl { font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--muted); font-weight:700; display:flex; justify-content:space-between; align-items:center; }
+.title { font-weight:800; font-size:16px; }
+.cap { white-space:pre-wrap; font-size:14px; color:#d5d8e0; background:var(--panel2); border-radius:8px; padding:10px; }
+.copy { background:none; border:1px solid var(--line); color:var(--text); border-radius:7px; font:inherit; font-size:12px; padding:3px 9px; cursor:pointer; text-transform:none; letter-spacing:0; }
+.src { font-size:12px; color:var(--muted); }
+.src a { color:#7dd3fc; }
+.row { display:flex; gap:8px; }
+.btn { flex:1; text-align:center; text-decoration:none; background:var(--panel2); color:var(--text); border:1px solid var(--line); padding:11px; border-radius:10px; font:inherit; font-weight:700; cursor:pointer; }
+.btn.dl { background:var(--accent); color:var(--ink); border-color:var(--accent); }
+.btn.ok { background:var(--green); color:#04210f; border-color:var(--green); }
+.link-in { width:100%; background:var(--panel2); border:1px solid var(--line); color:var(--text); border-radius:8px; padding:8px 10px; font:inherit; font-size:13px; }
+.empty { text-align:center; color:var(--muted); padding:60px 20px; border:1px dashed var(--line); border-radius:14px; }
+dialog { background:var(--panel); color:var(--text); border:1px solid var(--line); border-radius:14px; max-width:460px; width:calc(100% - 32px); }
+dialog::backdrop { background:rgba(0,0,0,.6); }
+dialog input { width:100%; margin:6px 0 12px; background:var(--panel2); border:1px solid var(--line); color:var(--text); border-radius:8px; padding:10px; font:inherit; }
+dialog ol { padding-left:18px; color:var(--muted); font-size:14px; }
+.toast { position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:var(--panel2); border:1px solid var(--line); padding:10px 16px; border-radius:10px; font-weight:700; z-index:20; display:none; }
+.who { font-size:12px; color:var(--muted); cursor:pointer; text-decoration:underline; }
+</style>
+</head>
+<body>
+<header><div class="hrow">
+  <div class="brand"><span class="logo">✂</span> Clip Drop</div>
+  <span class="who" id="who" onclick="setup()">Connect to tick ✓</span>
+  <div class="seg" id="seg">
+    <button data-f="todo" class="on">To post <span id="cTodo"></span></button>
+    <button data-f="posted">Posted <span id="cPosted"></span></button>
+    <button data-f="all">All</button>
+  </div>
+</div></header>
+<main>
+  <div class="note" id="intro"><b>How it works:</b> tap <b>Download</b>, copy the <b>title</b> and <b>caption</b>, post the clip, then tap <b>Mark posted</b> (you can paste the post link). New clips appear here as soon as they're published.</div>
+  <div id="grid" class="grid"></div>
+</main>
+
+<dialog id="dlg">
+  <h3 style="margin-top:0">Connect GitHub to tick off clips</h3>
+  <ol>
+    <li>Ask the owner to add you as a collaborator on <b id="repoName"></b>, then accept the invite.</li>
+    <li>Create a <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" style="color:#7dd3fc">fine-grained token</a>: Repository access → <i>Only select repositories</i> → this repo; Permissions → <b>Contents: Read and write</b>.</li>
+    <li>Paste it below. It's stored only in this browser.</li>
+  </ol>
+  <label>Your name<input id="inName" placeholder="e.g. Alex"></label>
+  <label>Token<input id="inTok" placeholder="github_pat_…" type="password"></label>
+  <div class="row"><button class="btn" onclick="dlg.close()">Cancel</button><button class="btn dl" onclick="saveSetup()">Save</button></div>
+</dialog>
+<div class="toast" id="toast"></div>
+
+<script>
+const REPO = "rajryadav4/clip-drop";
+const API = `https://api.github.com/repos/${REPO}/contents/`;
+let CLIPS = [], POSTED = {}, FILTER = "todo";
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const tok = () => { try { return localStorage.getItem("cd_token") || ""; } catch { return ""; } };
+const me = () => { try { return localStorage.getItem("cd_name") || ""; } catch { return ""; } };
+function toast(m) { const t = $("#toast"); t.textContent = m; t.style.display = "block"; clearTimeout(t._h); t._h = setTimeout(() => t.style.display = "none", 2200); }
+const b64d = (s) => decodeURIComponent(escape(atob(s.replace(/\n/g, ""))));
+const b64e = (s) => btoa(unescape(encodeURIComponent(s)));
+
+async function getJSON(path) {
+  const headers = { Accept: "application/vnd.github+json" };
+  if (tok()) headers.Authorization = "Bearer " + tok();
+  try {
+    const r = await fetch(API + path + "?t=" + Date.now(), { headers, cache: "no-store" });
+    if (r.ok) { const d = await r.json(); return { data: JSON.parse(b64d(d.content || "") || "null"), sha: d.sha }; }
+  } catch {}
+  // fallback: same-origin Pages copy (may lag a few minutes)
+  const r2 = await fetch(path + "?t=" + Date.now(), { cache: "no-store" });
+  return { data: r2.ok ? await r2.json() : null, sha: null };
+}
+
+async function load() {
+  const [c, p] = await Promise.all([getJSON("clips.json"), getJSON("posted.json")]);
+  CLIPS = c.data || []; POSTED = p.data || {};
+  render();
+}
+
+function render() {
+  const isPosted = (id) => !!(POSTED[id] && POSTED[id].posted);
+  $("#cTodo").textContent = `(${CLIPS.filter(c => !isPosted(c.id)).length})`;
+  $("#cPosted").textContent = `(${CLIPS.filter(c => isPosted(c.id)).length})`;
+  const list = CLIPS.filter(c => FILTER === "all" || (FILTER === "posted") === isPosted(c.id));
+  $("#who").textContent = tok() ? `✓ ${me() || "connected"}` : "Connect to tick ✓";
+  if (!list.length) { $("#grid").innerHTML = `<div class="empty">${FILTER === "todo" ? "All caught up 🎉 Nothing left to post." : "Nothing here yet."}</div>`; return; }
+  $("#grid").innerHTML = list.map(c => {
+    const p = POSTED[c.id] || {};
+    return `<div class="card ${p.posted ? "posted" : ""}" id="c-${esc(c.id)}">
+      <div class="media" style="background-image:url('${esc(c.thumb)}')" onclick="play(this, '${esc(c.video_url)}')">
+        <div class="badges">${c.virality ? `<span class="b">🔥 ${c.virality}</span>` : ""}<span class="b">${Math.round(c.duration || 0)}s</span>
+          ${c.campaign ? `<span class="b">💰 ${esc(c.campaign)}</span>` : ""}${p.posted ? `<span class="b done">✓ Posted</span>` : ""}</div>
+        <div class="play"><span>▶</span></div>
+      </div>
+      <div class="body">
+        <div><div class="lbl">Title <button class="copy" onclick="copy(event, ${JSON.stringify(c.title).replace(/"/g, "&quot;")})">Copy</button></div>
+          <div class="title">${esc(c.title)}</div></div>
+        <div><div class="lbl">Caption <button class="copy" onclick="copy(event, ${JSON.stringify(c.caption).replace(/"/g, "&quot;")})">Copy</button></div>
+          <div class="cap">${esc(c.caption)}</div></div>
+        <div class="src">From <a href="${esc(c.source_url)}" target="_blank" rel="noopener">${esc(c.source_title)}</a>${c.creator ? " · " + esc(c.creator) : ""}
+          ${c.campaign_url ? ` · <a href="${esc(c.campaign_url)}" target="_blank" rel="noopener">campaign rules</a>` : ""}</div>
+        ${p.posted && p.link ? `<div class="src">Posted: <a href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.link)}</a>${p.by ? " by " + esc(p.by) : ""}</div>` : ""}
+        ${!p.posted ? `<input class="link-in" id="l-${esc(c.id)}" placeholder="Post link (optional)">` : ""}
+        <div class="row">
+          <a class="btn dl" href="${esc(c.video_url)}" download>⬇ Download</a>
+          <button class="btn ${p.posted ? "" : "ok"}" onclick="toggle('${esc(c.id)}')">${p.posted ? "Undo" : "✓ Mark posted"}</button>
+        </div>
+      </div></div>`;
+  }).join("");
+}
+
+function play(el, url) {
+  if (el.querySelector("video")) return;
+  el.innerHTML = `<video src="${url}" controls autoplay playsinline></video>`;
+}
+function copy(e, text) {
+  e.stopPropagation();
+  navigator.clipboard.writeText(text).then(() => toast("Copied ✓"), () => toast("Copy failed"));
+}
+
+async function toggle(id) {
+  if (!tok()) { setup(); return; }
+  const linkEl = document.getElementById("l-" + id);
+  const link = linkEl ? linkEl.value.trim() : "";
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const { data, sha } = await getJSON("posted.json");
+    const posted = data || {};
+    const now = !(posted[id] && posted[id].posted);
+    if (now) posted[id] = { posted: true, at: new Date().toISOString(), by: me(), link };
+    else delete posted[id];
+    const body = { message: `${now ? "posted" : "unposted"} ${id}`, content: b64e(JSON.stringify(posted, null, 1) + "\n") };
+    if (sha) body.sha = sha;
+    const r = await fetch(API + "posted.json", { method: "PUT", headers: { Authorization: "Bearer " + tok(), Accept: "application/vnd.github+json" }, body: JSON.stringify(body) });
+    if (r.ok) { POSTED = posted; render(); toast(now ? "Marked posted ✓" : "Moved back to To post"); return; }
+    if (r.status === 409) continue;
+    if (r.status === 401 || r.status === 403 || r.status === 404) { toast("Token can't write to this repo — check access"); setup(); return; }
+    toast("Save failed (" + r.status + ")"); return;
+  }
+}
+
+function setup() { $("#repoName").textContent = REPO; $("#inName").value = me(); $("#inTok").value = tok(); $("#dlg").showModal(); }
+function saveSetup() {
+  try { localStorage.setItem("cd_token", $("#inTok").value.trim()); localStorage.setItem("cd_name", $("#inName").value.trim()); } catch {}
+  $("#dlg").close(); load();
+}
+document.querySelectorAll("#seg button").forEach(b => b.onclick = () => {
+  FILTER = b.dataset.f; document.querySelectorAll("#seg button").forEach(x => x.classList.toggle("on", x === b)); render();
+});
+const dlg = $("#dlg");
+load();
+setInterval(load, 60000);
+</script>
+</body>
+</html>
