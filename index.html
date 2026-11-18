@@ -66,6 +66,15 @@ dialog ol { padding-left:18px; color:var(--muted); font-size:14px; }
 .bar2 { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:14px; }
 .bar2 input, .bar2 select { background:var(--panel2); border:1px solid var(--line); color:var(--text); border-radius:8px; padding:9px 10px; font:inherit; }
 .bar2 input { flex:1; min-width:180px; }
+.suggest { background:var(--panel); border:1px solid var(--line); border-left:3px solid #8b5cf6; border-radius:12px; padding:14px; margin-bottom:16px; display:flex; flex-direction:column; gap:10px; }
+.suggest .row2 { display:flex; gap:8px; flex-wrap:wrap; }
+.suggest .row2 input { flex:1; min-width:200px; background:var(--panel2); border:1px solid var(--line); color:var(--text); border-radius:8px; padding:10px; font:inherit; }
+.suggest .row2 .btn { flex:0 0 auto; padding:10px 18px; }
+.sg { display:flex; gap:8px; align-items:center; flex-wrap:wrap; font-size:13px; padding:8px 0; border-top:1px solid var(--line); }
+.sg a { color:#7dd3fc; word-break:break-all; }
+.st { font-size:11px; font-weight:800; padding:2px 8px; border-radius:6px; text-transform:uppercase; background:var(--panel2); color:var(--muted); }
+.st.new { color:#c4b5fd; } .st.clipping { color:var(--accent); } .st.done { color:var(--green); } .st.dismissed { color:var(--red); }
+.btn.sgb { flex:0 0 auto; padding:9px 12px; }
 .who { font-size:12px; color:var(--muted); cursor:pointer; text-decoration:underline; }
 </style>
 </head>
@@ -85,6 +94,15 @@ dialog ol { padding-left:18px; color:var(--muted); font-size:14px; }
   <div id="grid" class="grid"></div>
   <section id="earn" style="display:none">
     <div class="note"><b>How to get paid for clips:</b> 1) Open a campaign below and <b>join / apply</b> (Content Rewards uses a free Whop account). 2) Post the clip on the platforms the campaign allows (TikTok, Reels, Shorts, X). 3) <b>Submit your post link</b> on the campaign page. You're paid per 1,000 views until the campaign budget runs out. Read each campaign's rules: some need specific hashtags or captions.</div>
+    <div class="suggest">
+      <div class="lbl" style="font-size:13px">📩 Suggest to the owner <span style="text-transform:none;letter-spacing:0;font-weight:500">: found a good campaign or a stream to clip? Send it.</span></div>
+      <div class="row2">
+        <input id="sgLink" placeholder="Paste a campaign link, or a YouTube / Kick / Twitch stream or video to clip">
+        <input id="sgNote" placeholder="Note (optional): why it's good, which moments…">
+        <button class="btn dl" onclick="suggestLink()">Send</button>
+      </div>
+      <div id="mySug"></div>
+    </div>
     <div class="bar2">
       <input id="cq" placeholder="Search campaigns…" oninput="renderEarn()">
       <select id="csort" onchange="renderEarn()"><option value="rate">Highest payout</option><option value="pool">Highest pool</option><option value="budget">Most budget left</option><option value="latest">Latest</option><option value="open">Least crowded</option></select>
@@ -95,7 +113,7 @@ dialog ol { padding-left:18px; color:var(--muted); font-size:14px; }
 </main>
 
 <dialog id="dlg">
-  <h3 style="margin-top:0">Connect GitHub to tick off clips</h3>
+  <h3 style="margin-top:0">Connect GitHub to tick off clips &amp; send suggestions</h3>
   <ol>
     <li>Ask the owner to add you as a collaborator on <b id="repoName"></b>, then accept the invite.</li>
     <li>Create a <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" style="color:#7dd3fc">fine-grained token</a>: Repository access → <i>Only select repositories</i> → this repo; Permissions → <b>Contents: Read and write</b>.</li>
@@ -191,11 +209,69 @@ function setView(v) {
   $("#earn").style.display = v === "earn" ? "" : "none";
   if (v === "earn") loadCamps(); else render();
 }
+let SUGG = [];
 async function loadCamps() {
   if (!CAMPS.length) $("#camps").innerHTML = `<div class="empty">Loading campaigns…</div>`;
-  const { data } = await getJSON("campaigns.json");
-  CAMPS = (data && data.campaigns) || [];
-  renderEarn();
+  const [c, sg] = await Promise.all([getJSON("campaigns.json"), getJSON("suggestions.json")]);
+  CAMPS = (c.data && c.data.campaigns) || [];
+  SUGG = Array.isArray(sg.data) ? sg.data : [];
+  renderEarn(); renderSug();
+}
+function renderSug() {
+  const list = SUGG.slice().sort((a, b) => (b.at || "").localeCompare(a.at || "")).slice(0, 12);
+  $("#mySug").innerHTML = list.length ? list.map(x => `<div class="sg">
+      <span class="st ${esc(x.status || "new")}">${esc(x.status || "new")}</span>
+      <b>${esc(x.title || "")}</b>${x.rate_label ? ` <span class="rate" style="font-size:12px">${esc(x.rate_label)}/1K</span>` : ""}
+      <a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.url.length > 70 ? x.url.slice(0, 70) + "…" : x.url)}</a>
+      ${x.note ? `<span style="color:var(--muted)">“${esc(x.note)}”</span>` : ""}
+      ${x.reply ? `<span style="color:var(--green)">↳ ${esc(x.reply)}</span>` : ""}
+      <span style="color:var(--muted);margin-left:auto">${esc(x.by || "")}</span>
+    </div>`).join("") : `<div style="color:var(--muted);font-size:13px">No suggestions yet.</div>`;
+}
+async function updateJSON(path, mutate, message, fallback) {
+  if (!tok()) { setup(); return null; }
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const { data, sha } = await getJSON(path);
+    const next = mutate(data ?? fallback);
+    const body = { message, content: b64e(JSON.stringify(next, null, 1) + "\n") };
+    if (sha) body.sha = sha;
+    const r = await fetch(API + path, { method: "PUT", headers: { Authorization: "Bearer " + tok(), Accept: "application/vnd.github+json" }, body: JSON.stringify(body) });
+    if (r.ok) return next;
+    if (r.status === 409) continue;
+    if (r.status === 401 || r.status === 403 || r.status === 404) { toast("Token can't write to this repo — check access"); setup(); return null; }
+    toast("Save failed (" + r.status + ")"); return null;
+  }
+  return null;
+}
+async function addSuggestion(entry) {
+  entry = { id: Date.now().toString(36) + Math.random().toString(36).slice(2, 6), at: new Date().toISOString(), by: me(), status: "new", ...entry };
+  const next = await updateJSON("suggestions.json", (arr) => {
+    arr = Array.isArray(arr) ? arr : [];
+    if (arr.some(x => x.url === entry.url && x.status === "new")) return arr;
+    return [...arr, entry];
+  }, `suggestion from ${me() || "friend"}: ${entry.title || entry.url}`.slice(0, 120), []);
+  if (next) { SUGG = next; renderSug(); renderEarn(); toast("Sent to the owner ✓"); return true; }
+  return false;
+}
+function linkKind(u) {
+  if (/youtube\.com|youtu\.be|kick\.com|twitch\.tv/i.test(u)) return "video";
+  return "campaign";
+}
+async function suggestLink() {
+  const url = $("#sgLink").value.trim(), note = $("#sgNote").value.trim();
+  if (!/^https?:\/\//i.test(url)) { toast("Paste a full link (https://…)"); return; }
+  const kind = linkKind(url);
+  const known = CAMPS.find(c => c.url && url.startsWith(c.url));
+  const ok = await addSuggestion({ url, note, kind, title: known ? known.title : (kind === "video" ? "Stream / video to clip" : "Campaign"),
+    campaign_id: known ? known.id : "", rate_label: known ? known.rate_label : "" });
+  if (ok) { $("#sgLink").value = ""; $("#sgNote").value = ""; }
+}
+async function suggestCampaign(id) {
+  const c = CAMPS.find(x => x.id === id);
+  if (!c) return;
+  const note = prompt(`Suggest “${c.title}” to the owner. Add a note? (optional)`, "");
+  if (note === null) return;
+  await addSuggestion({ url: c.url, note, kind: "campaign", title: c.title, campaign_id: c.id, rate_label: c.rate_label });
 }
 function renderEarn() {
   const q = $("#cq").value.toLowerCase(), sort = $("#csort").value, app = $("#capp").value;
@@ -209,7 +285,11 @@ function renderEarn() {
       <span class="rate">${esc(c.rate_label || (c.rate ? "$" + c.rate : "?"))}/1K</span></div>
     <div class="m">${c.budget_left != null ? money(c.budget_left) + " left" + (c.budget_total ? " of " + money(c.budget_total) + " pool" : "") : ""}${c.clippers ? " · " + c.clippers + " clippers" : ""}${(c.platforms || []).length ? " · " + c.platforms.map(esc).join(", ") : ""}</div>
     <div class="m">${c.requires_application ? "📝 Application required" : "✅ Open: join and start posting"} · ${esc(c.source || "")}</div>
-    ${c.url ? `<a class="btn apply" href="${esc(c.url)}" target="_blank" rel="noopener">${c.requires_application ? "Apply →" : "Join & get paid →"}</a>` : ""}
+    <div class="row">
+      ${c.url ? `<a class="btn apply" href="${esc(c.url)}" target="_blank" rel="noopener">${c.requires_application ? "Apply →" : "Join & get paid →"}</a>` : ""}
+      ${SUGG.some(x => x.campaign_id === c.id && x.status !== "dismissed") ? `<span class="btn sgb" style="cursor:default;color:var(--green)">✓ Suggested</span>`
+        : `<button class="btn sgb" onclick="suggestCampaign('${esc(c.id)}')">👍 Suggest</button>`}
+    </div>
   </div>`).join("");
 }
 
