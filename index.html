@@ -205,7 +205,7 @@ function renderEarn() {
   if (!list.length) { $("#camps").innerHTML = `<div class="empty">${CAMPS.length ? "No campaigns match." : "No campaign rates published yet. Ask the owner to sync rates from AI Clipper."}</div>`; return; }
   const money = n => n >= 1000 ? "$" + (n / 1000).toFixed(1) + "K" : "$" + Math.round(n || 0);
   $("#camps").innerHTML = list.map(c => `<div class="camp">
-    <div class="top">${c.thumbnail ? `<img src="${esc(c.thumbnail)}" alt="">` : ""}<div style="flex:1;min-width:0"><div class="t">${esc(c.title)}</div><div class="m">${esc(c.brand || "")}${c.category ? " · " + esc(c.category) : ""}</div></div>
+    <div class="top">${c.thumbnail ? `<img src="${esc(c.thumbnail)}" alt="" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}<div style="flex:1;min-width:0"><div class="t">${esc(c.title)}</div><div class="m">${esc(c.brand || "")}${c.category ? " · " + esc(c.category) : ""}</div></div>
       <span class="rate">${esc(c.rate_label || (c.rate ? "$" + c.rate : "?"))}/1K</span></div>
     <div class="m">${c.budget_left != null ? money(c.budget_left) + " left" + (c.budget_total ? " of " + money(c.budget_total) + " pool" : "") : ""}${c.clippers ? " · " + c.clippers + " clippers" : ""}${(c.platforms || []).length ? " · " + c.platforms.map(esc).join(", ") : ""}</div>
     <div class="m">${c.requires_application ? "📝 Application required" : "✅ Open: join and start posting"} · ${esc(c.source || "")}</div>
