@@ -14,7 +14,10 @@
   "creator": "TJR",
   "campaign": "TJR $50,000 Clipping Campaign",
   "campaign_url": "https://contentrewards.com/c/campaigns/33c3d5a9-84a9-40c8-b6e4-9904e4816339",
-  "published_at": 1795038807.285936
+  "published_at": 1795038807.285936,
+  "rate": 0.75,
+  "rate_label": "$0.75",
+  "requires_application": false
  },
  {
   "id": "20261118-134724-fb94-02",
@@ -31,7 +34,10 @@
   "creator": "TJR",
   "campaign": "TJR $50,000 Clipping Campaign",
   "campaign_url": "https://contentrewards.com/c/campaigns/33c3d5a9-84a9-40c8-b6e4-9904e4816339",
-  "published_at": 1795038804.769562
+  "published_at": 1795038804.769562,
+  "rate": 0.75,
+  "rate_label": "$0.75",
+  "requires_application": false
  },
  {
   "id": "20261118-134724-fb94-01",
@@ -48,6 +54,9 @@
   "creator": "TJR",
   "campaign": "TJR $50,000 Clipping Campaign",
   "campaign_url": "https://contentrewards.com/c/campaigns/33c3d5a9-84a9-40c8-b6e4-9904e4816339",
-  "published_at": 1795038802.108345
+  "published_at": 1795038802.108345,
+  "rate": 0.75,
+  "rate_label": "$0.75",
+  "requires_application": false
  }
 ]
